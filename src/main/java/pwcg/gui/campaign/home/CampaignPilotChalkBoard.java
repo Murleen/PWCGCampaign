@@ -1,8 +1,6 @@
 package pwcg.gui.campaign.home;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
-import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridBagConstraints;
 import java.awt.GridBagLayout;
@@ -10,6 +8,10 @@ import java.util.List;
 
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.Spring;
+import javax.swing.SpringLayout;
+import javax.swing.SpringLayout.Constraints;
 
 import pwcg.campaign.squadmember.SquadronMember;
 import pwcg.core.exception.PWCGException;
@@ -19,6 +21,7 @@ import pwcg.gui.dialogs.ErrorDialog;
 import pwcg.gui.dialogs.MonitorSupport;
 import pwcg.gui.utils.ContextSpecificImages;
 import pwcg.gui.utils.ImageResizingPanel;
+import pwcg.gui.utils.ScrollBarWrapper;
 
 public class CampaignPilotChalkBoard extends ImageResizingPanel
 {
@@ -33,9 +36,20 @@ public class CampaignPilotChalkBoard extends ImageResizingPanel
     {
         try
         {
-            this.setLayout(new BorderLayout()); 
+            SpringLayout springLayout = new SpringLayout();
+            this.setLayout(springLayout);
+            Spring chalkboardHeight = springLayout.getConstraint(SpringLayout.HEIGHT, this);
+            Spring chalkboardWidth = springLayout.getConstraint(SpringLayout.WIDTH, this);
+
             JPanel squadronPanel = createPilotListPanel(sortedPilots);
-            this.add(squadronPanel, BorderLayout.CENTER);
+            JScrollPane scrollPane = ScrollBarWrapper.makeScrollPane(squadronPanel);
+
+            this.add(scrollPane);
+            Constraints scrollPaneConstraints = springLayout.getConstraints(scrollPane);
+            scrollPaneConstraints.setHeight(Spring.scale(chalkboardHeight, 0.6f));
+            scrollPaneConstraints.setWidth(Spring.scale(chalkboardWidth, 0.9f));
+            springLayout.putConstraint(SpringLayout.HORIZONTAL_CENTER, scrollPane, 0, SpringLayout.HORIZONTAL_CENTER, this);
+            springLayout.putConstraint(SpringLayout.VERTICAL_CENTER, scrollPane, 0, SpringLayout.VERTICAL_CENTER, this);
         }
         catch (Exception e)
         {
@@ -59,11 +73,6 @@ public class CampaignPilotChalkBoard extends ImageResizingPanel
         
         JPanel squadronPanel = new JPanel(squadronLayout);
         squadronPanel.setOpaque(false);
-        Dimension preferredSize = this.getImageSize();
-        preferredSize.height -= 200;
-        preferredSize.width -= 200;
-        squadronPanel.setPreferredSize(preferredSize);
-        squadronPanel.setSize(preferredSize);
 
         JLabel lDummy = new JLabel("     ");
         lDummy.setOpaque(false);

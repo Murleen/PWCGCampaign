@@ -2,15 +2,18 @@ package pwcg.gui.campaign.pilot;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.event.ActionListener;
 import java.util.List;
 
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JScrollPane;
 import javax.swing.SwingConstants;
 
 import pwcg.campaign.PictureManager;
@@ -28,6 +31,7 @@ import pwcg.gui.utils.ImageButton;
 import pwcg.gui.utils.ImageResizingPanel;
 import pwcg.gui.utils.PWCGButtonFactory;
 import pwcg.gui.utils.PWCGButtonNoBackground;
+import pwcg.gui.utils.ScrollBarWrapper;
 
 public class CampaignPilotListPanel extends ImageResizingPanel
 {
@@ -43,14 +47,14 @@ public class CampaignPilotListPanel extends ImageResizingPanel
 	public JPanel makeSquadronRightPanel(List<SquadronMember>pilots, String description, String action) throws PWCGException  
 	{
         ImageResizingPanel pilotsPanel = new ImageResizingPanel(imagePath);
-        pilotsPanel.setLayout(new BorderLayout());
+        pilotsPanel.setLayout(new BoxLayout(pilotsPanel, BoxLayout.Y_AXIS));
 		pilotsPanel.setOpaque(false);
 
 		JPanel pilotListGrid = new JPanel(new GridLayout(0, 1));
 		pilotListGrid.setOpaque(false);
 		
 		JPanel headerPlaque = makeNamePlaque(description);
-		pilotListGrid.add(headerPlaque);
+		pilotsPanel.add(headerPlaque);
 		
 		for (SquadronMember pilot : pilots)
 		{
@@ -67,7 +71,8 @@ public class CampaignPilotListPanel extends ImageResizingPanel
 			}
 		}
 		
-		pilotsPanel.add(pilotListGrid, BorderLayout.NORTH);
+		JScrollPane scrollPane = ScrollBarWrapper.makeScrollPaneForWrappingText(pilotListGrid);
+		pilotsPanel.add(scrollPane);
 		
 		return pilotsPanel;
 	}
@@ -92,7 +97,7 @@ public class CampaignPilotListPanel extends ImageResizingPanel
         Font font = MonitorSupport.getPrimaryFont();
         
 
-        JButton namePlateButton = new PWCGButtonNoBackground("          " + pilot.getNameAndRank());
+        JButton namePlateButton = new PWCGButtonNoBackground("     " + pilot.getNameAndRank());
         namePlateButton.setBackground(buttonBG);
         namePlateButton.setForeground(buttonFG);
         namePlateButton.setOpaque(false);
@@ -142,6 +147,12 @@ public class CampaignPilotListPanel extends ImageResizingPanel
         squadronPanelLabel.setVerticalAlignment(JLabel.CENTER);
         
         headerPlaquePanel.add(squadronPanelLabel, BorderLayout.CENTER);
+
+        Dimension preferredSize = headerPlaquePanel.getPreferredSize();
+        preferredSize.height *= 2;
+        headerPlaquePanel.setMaximumSize(preferredSize);
+        headerPlaquePanel.setPreferredSize(preferredSize);
+        headerPlaquePanel.setMinimumSize(preferredSize);
          
         return headerPlaquePanel;
     }

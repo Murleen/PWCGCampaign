@@ -52,7 +52,7 @@ public class CampaignRosterSquadronPanelFactory extends CampaignRosterBasePanelF
 		pilotListPanel = pilotList.makeSquadronRightPanel(sortedPilots, "  Roster", "CampFlowPilot:");
 		
 		JPanel descPanel = makeDescPanel();
-		pilotListPanel.add(descPanel, BorderLayout.CENTER);
+		pilotListPanel.add(descPanel);
     }
 
     public void makePilotList() throws PWCGException 
