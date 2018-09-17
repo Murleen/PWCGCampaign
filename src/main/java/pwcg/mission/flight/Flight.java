@@ -124,7 +124,7 @@ public abstract class Flight implements IFlight
     {
         return flightData.getFlightInformation().isPlayerFlight();
     }
-    
+
     @Override
     public boolean isFlightHasFighterPlanes()
     {

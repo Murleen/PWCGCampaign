@@ -41,6 +41,9 @@ public class MissionFlightFinalizer
         
         setCzTriggers();
         
+        MissionSkinTemplateGenerator missionSkinTemplateGenerator = new MissionSkinTemplateGenerator();
+        missionSkinTemplateGenerator.generateSkins(campaign, mission.getMissionFlightBuilder().getAllAerialFlights());
+
         return finalizedMissionFlights;
     }
 

@@ -2,6 +2,8 @@ package pwcg.campaign.skin;
 
 import java.io.File;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 
 import pwcg.campaign.context.PWCGContext;
 import pwcg.core.exception.PWCGException;
@@ -25,6 +27,8 @@ public class Skin implements Cloneable
     private String country = "";
     private String category = "";
     private boolean definedInGame = false;
+    private String template;
+    private Map<String, Object> overrides = new HashMap<>();
 	
     public static int FACTORY_GENERIC = -2;
     public static int PERSONAL_SKIN = -1;
@@ -49,6 +53,8 @@ public class Skin implements Cloneable
 			skin.country = this.country;
 			skin.category = this.category;
 			skin.definedInGame = this.definedInGame;
+			skin.template = this.template;
+			skin.overrides = new HashMap<>(this.overrides);
 		}
 		catch (Exception e)
 		{
@@ -163,5 +169,21 @@ public class Skin implements Cloneable
     public void setCategory(String category)
     {
         this.category = category;
+    }
+
+    public String getTemplate() {
+        return template;
+    }
+
+    public void setTemplate(String template) {
+        this.template = template;
+    }
+
+    public Map<String, Object> getOverrides() {
+        return overrides;
+    }
+
+    public void setOverrides(Map<String, Object> overrides) {
+        this.overrides = overrides;
     }
 }
