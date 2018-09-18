@@ -87,8 +87,8 @@ public class SkinTemplate {
 
                 if (overrides != null && overrides.containsKey(param))
                     value = overrides.get(param);
-                else if (param.equals("NUM_IN_FLIGHT"))
-                    value = plane.getCallnum();
+                else if (param.equals("AIRCRAFT_ID_CODE"))
+                    value = plane.getAircraftIdCode();
                 else if (param.equals("WINTER")) {
                     Season season = PWCGContext.getInstance().getCurrentMap().getMapWeather().getSeason(campaign.getDate());
                     value = (season == Season.WINTER) ? 1 : 0;

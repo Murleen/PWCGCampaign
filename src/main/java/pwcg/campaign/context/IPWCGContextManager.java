@@ -8,6 +8,7 @@ import pwcg.campaign.Campaign;
 import pwcg.campaign.api.IAirfield;
 import pwcg.campaign.context.PWCGMap.FrontMapIdentifier;
 import pwcg.campaign.group.airfield.staticobject.StaticObjectDefinitionManager;
+import pwcg.campaign.plane.IPlaneMarkingManager;
 import pwcg.campaign.plane.PlaneTypeFactory;
 import pwcg.campaign.plane.payload.IPayloadFactory;
 import pwcg.campaign.skin.SkinManager;
@@ -75,4 +76,6 @@ public interface IPWCGContextManager
     VehicleDefinitionManager getVehicleDefinitionManager();
 
     StaticObjectDefinitionManager getStaticObjectDefinitionManager();
+
+    IPlaneMarkingManager getPlaneMarkingManager();
 }

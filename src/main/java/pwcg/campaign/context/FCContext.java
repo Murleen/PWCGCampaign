@@ -1,6 +1,10 @@
 package pwcg.campaign.context;
 
+import pwcg.campaign.Campaign;
 import pwcg.campaign.context.PWCGMap.FrontMapIdentifier;
+import pwcg.campaign.plane.Equipment;
+import pwcg.campaign.plane.EquippedPlane;
+import pwcg.campaign.plane.IPlaneMarkingManager;
 import pwcg.campaign.plane.payload.IPayloadFactory;
 import pwcg.core.exception.PWCGException;
 import pwcg.product.fc.plane.payload.FCPayloadFactory;
@@ -58,5 +62,14 @@ public class FCContext extends PWCGContextBase implements IPWCGContextManager
     public boolean determineUseMovingFront() throws PWCGException
     {        
         return true;
+    }
+
+    @Override
+    public IPlaneMarkingManager getPlaneMarkingManager() {
+         return new IPlaneMarkingManager() {
+            @Override
+            public void allocatePlaneIdCode(Campaign campaign, Equipment equipment, EquippedPlane equippedPlane) throws PWCGException {
+            }
+        };
     }
 }
