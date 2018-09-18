@@ -21,6 +21,7 @@ public class Skin implements Cloneable
     
 	private String skinName = "";
 	private String planeType = "";
+	private String[] archTypes = {};
 	private Date startDate = DateUtils.getBeginningOfGame();
 	private Date endDate = DateUtils.getEndOfWar();
     private int squadId = PERSONAL_SKIN;
@@ -47,6 +48,7 @@ public class Skin implements Cloneable
 			
 			skin.skinName = this.skinName;
 			skin.planeType = this.planeType;
+			skin.archTypes = this.archTypes;
 			skin.startDate = this.startDate;
 			skin.endDate = this.endDate;
 			skin.squadId = this.squadId;
@@ -108,6 +110,14 @@ public class Skin implements Cloneable
 	public void setPlane(String plane) {
 		this.planeType = plane;
 	}
+
+	public String[] getArchTypes() {
+        return archTypes;
+    }
+
+    public void setArchTypes(String[] archTypes) {
+        this.archTypes = archTypes;
+    }
 
 	public Date getStartDate() {
 		return startDate;
