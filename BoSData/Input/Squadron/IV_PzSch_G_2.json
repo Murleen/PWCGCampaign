@@ -23,7 +23,22 @@
     "19431004": "Zaporojskaya",
     "19431008": "Zaporojskaya"
   },
-  "skins": [],
+  "skins": [
+    {
+      "skinName": "LW_ATTACK_SCHG1_4_SCHG2",
+      "archTypes": ["hs129"],
+      "startDate": "19420820",
+      "endDate": "19450503",
+      "squadId": 20144002,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_ATTACK_SCHG1",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 4
+      }
+    }
+  ],
   "serviceId": 20101,
   "squadronRoles": {
     "squadronRolePeriods": [

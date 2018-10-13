@@ -39,6 +39,28 @@
   },
   "skins": [
     {
+      "skinName": "VVS_GREEN_BLACK_629TH",
+      "archTypes": ["i16"],
+      "startDate": "19420101",
+      "endDate": "19450503",
+      "squadId": 10111629,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN_BLACK"
+    },
+    {
+      "skinName": "VVS_GREEN_GREY_629TH",
+      "archTypes": ["spitfire"],
+      "startDate": "19430315",
+      "endDate": "19450503",
+      "squadId": 10111629,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN_GREY"
+    },
+    {
       "skinName": "629th Fighter Air Regiment",
       "planeType": "i16t24",
       "startDate": "19410801",

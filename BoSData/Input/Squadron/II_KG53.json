@@ -41,7 +41,22 @@
     "19431004": "Bagerovo",
     "19431008": "Semisotka"
   },
-  "skins": [],
+  "skins": [
+    {
+      "skinName": "LW_BOMBER_GENERIC_II_KG53",
+      "archTypes": ["he111"],
+      "startDate": "19410801",
+      "endDate": "19450503",
+      "squadId": 20132053,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 1
+      }
+    }
+  ],
   "squadHistory": {
     "squadHistoryEntries": [
       {

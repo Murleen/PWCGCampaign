@@ -42,6 +42,20 @@
     "19431008": "Hardji-Bie"
   },
   "skins": [
+    {
+      "skinName": "LW_BOMBER_GENERIC_I_STG77",
+      "planeType": "ju87d3",
+      "startDate": "19410801",
+      "endDate": "19450503",
+      "squadId": 20121077,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 1
+      }
+    },
   {
       "skinName": "I_St_G_77",
       "planeType": "ju87d3",

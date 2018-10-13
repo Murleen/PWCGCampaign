@@ -49,6 +49,21 @@
   },
   "skins": [
     {
+      "skinName": "LW_GENERIC_FIGHTER_II_JG51",
+      "archTypes": ["bf109", "fw190"],
+      "startDate": "19411001",
+      "endDate": "19450503",
+      "squadId": 20112051,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_GENERIC_FIGHTER",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 3,
+        "INSIGNIA_NOSE": "Insignia\\JG51.png"
+      }
+    },
+    {
       "skinName": "II_JG51",
       "planeType": "bf109f2",
       "startDate": "19400801",

@@ -42,6 +42,35 @@
     "19431008": "Zamorsk"
   },
   "skins": [
+    {
+      "skinName": "LW_BOMBER_GENERIC_I_STG2",
+      "planeType": "ju87d3",
+      "startDate": "19410801",
+      "endDate": "19430917",
+      "squadId": 20121002,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 2,
+        "INSIGNIA_CP_FORE": "Insignia\\2_StG2.png"
+      }
+    },
+    {
+      "skinName": "LW_BOMBER_GENERIC_I_STG3",
+      "planeType": "ju87d3",
+      "startDate": "19430918",
+      "endDate": "19450503",
+      "squadId": 20121002,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 2
+      }
+    },
   {
       "skinName": "I_St_G_2",
       "planeType": "ju87d3",

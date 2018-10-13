@@ -64,6 +64,39 @@
   },
   "skins": [
     {
+      "skinName": "VVS_GREEN_233RD",
+      "archTypes": ["mig3", "lagg"],
+      "startDate": "19410801",
+      "endDate": "19420331",
+      "squadId": 10111233,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN"
+    },
+    {
+      "skinName": "VVS_GREEN_BLACK_233RD",
+      "archTypes": ["lagg"],
+      "startDate": "19420401",
+      "endDate": "19430630",
+      "squadId": 10111233,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN_BLACK"
+    },
+    {
+      "skinName": "VVS_GREY_233RD",
+      "archTypes": ["lagg", "yak"],
+      "startDate": "19430701",
+      "endDate": "19450503",
+      "squadId": 10111233,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREY"
+    },
+    {
       "skinName": "233rd Fighter Air Regiment",
       "planeType": "mig3s24",
       "startDate": "19410801",

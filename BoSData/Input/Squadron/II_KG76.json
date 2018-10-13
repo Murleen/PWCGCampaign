@@ -48,7 +48,22 @@
     "19450310": "Munster-Handorf",
     "19450404": "Bad Lippspringe"
   },
-  "skins": [],
+  "skins": [
+    {
+      "skinName": "LW_BOMBER_GENERIC_II_KG76",
+      "archTypes": ["ju88"],
+      "startDate": "19410801",
+      "endDate": "19450503",
+      "squadId": 20132076,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 2
+      }
+    }
+  ],
   "squadHistory": {
     "squadHistoryEntries": [
       {

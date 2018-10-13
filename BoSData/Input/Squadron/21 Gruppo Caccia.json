@@ -40,7 +40,19 @@
     "19431004": "Taman",
     "19431008": "Marfovka"
   },
-  "skins": [],
+  "skins": [
+    {
+      "skinName": "RA_GENERIC_21",
+      "archTypes": ["mc200"],
+      "startDate": "19420801",
+      "endDate": "19450503",
+      "squadId": 20115021,
+      "country": "Italy",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "RA_GENERIC"
+    }
+  ],
   "serviceId": 20202,
   "squadronRoles": {
     "squadronRolePeriods": [

@@ -31,6 +31,28 @@
   },
   "skins": [
     {
+      "skinName": "VVS_GREEN_BLACK_225TH",
+      "archTypes": ["il2"],
+      "startDate": "19420401",
+      "endDate": "19430331",
+      "squadId": 10121225,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN_BLACK"
+    },
+    {
+      "skinName": "VVS_TRICOLOR_225TH",
+      "archTypes": ["il2"],
+      "startDate": "19430401",
+      "endDate": "19450503",
+      "squadId": 10121225,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_TRICOLOR"
+    },
+    {
       "skinName": "175th Ground Attack Air Regiment",
       "planeType": "il2m42",
       "startDate": "19420301",

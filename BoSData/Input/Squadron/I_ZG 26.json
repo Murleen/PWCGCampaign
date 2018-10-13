@@ -55,6 +55,20 @@
   },
   "skins": [
     {
+      "skinName": "LW_BOMBER_GENERIC_I_ZG26",
+      "archTypes": ["bf110"],
+      "startDate": "19410101",
+      "endDate": "19450503",
+      "squadId": 20101026,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 3
+      }
+    },
+    {
       "skinName": "I_ZG_26",
       "planeType": "bf110e2",
       "startDate": "19410101",

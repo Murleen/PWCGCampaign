@@ -48,7 +48,19 @@
     "19431004": "Abinskaya",
     "19431008": "Slavyanskaya"
   },
-  "skins": [],
+  "skins": [
+    {
+      "skinName": "VVS_GREEN_136TH",
+      "archTypes": ["pe2", "a20"],
+      "startDate": "19410801",
+      "endDate": "19450503",
+      "squadId": 10131136,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN"
+    }
+  ],
   "squadHistory": {
     "squadHistoryEntries": [
       {

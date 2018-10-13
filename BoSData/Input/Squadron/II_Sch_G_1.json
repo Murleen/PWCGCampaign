@@ -59,6 +59,20 @@
   },
   "skins": [
     {
+      "skinName": "LW_ATTACK_II_SCHG1",
+      "archTypes": ["bf109e", "fw190"],
+      "startDate": "19411001",
+      "endDate": "19450503",
+      "squadId": 20142001,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_ATTACK_SCHG1",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 2
+      }
+    },
+    {
       "skinName": "II_Sch_G_1",
       "planeType": "bf109e7",
       "startDate": "19410801",

@@ -49,6 +49,39 @@
     "19431008": "Abinskaya"
   },
   "skins": [
+    {
+      "skinName": "VVS_GREEN_321ST",
+      "archTypes": ["pe2"],
+      "startDate": "19410801",
+      "endDate": "19420331",
+      "squadId": 10131321,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN"
+    },
+    {
+      "skinName": "VVS_GREEN_BLACK_321ST",
+      "archTypes": ["pe2"],
+      "startDate": "19420401",
+      "endDate": "19450503",
+      "squadId": 10131321,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN_BLACK"
+    },
+    {
+      "skinName": "VVS_GREEN_321ST_A20",
+      "archTypes": ["a20"],
+      "startDate": "19420801",
+      "endDate": "19450503",
+      "squadId": 10131321,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN"
+    },
       {
       "skinName": "321st Bomber Air Regiment",
       "planeType": "a20b",

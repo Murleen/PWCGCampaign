@@ -46,6 +46,17 @@
   },
   "skins": [
     {
+      "skinName": "VVS_GREEN_126TH",
+      "archTypes": ["p40", "p39"],
+      "startDate": "19410801",
+      "endDate": "19450503",
+      "squadId": 10111126,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN"
+    },
+    {
       "skinName": "P40E1_SKIN_01",
       "planeType": "p40e1",
       "startDate": "19410801",

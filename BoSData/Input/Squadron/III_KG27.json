@@ -32,6 +32,20 @@
   },
   "skins": [
     {
+      "skinName": "LW_BOMBER_GENERIC_III_KG27",
+      "archTypes": ["he111"],
+      "startDate": "19410801",
+      "endDate": "19450503",
+      "squadId": 20133027,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 2
+      }
+    },
+    {
       "skinName": "HE111H6_SKIN_10",
       "planeType": "he111h6",
       "startDate": "19421101",

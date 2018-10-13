@@ -43,6 +43,35 @@
   },
   "skins": [
     {
+      "skinName": "LW_BOMBER_GENERIC_II_STG2",
+      "planeType": "ju87d3",
+      "startDate": "19410801",
+      "endDate": "19430917",
+      "squadId": 20122002,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 1,
+        "INSIGNIA_CP_FORE": "Insignia\\4_StG2.png"
+      }
+    },
+    {
+      "skinName": "LW_BOMBER_GENERIC_II_STG3",
+      "planeType": "ju87d3",
+      "startDate": "19430918",
+      "endDate": "19450503",
+      "squadId": 20122002,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_BOMBER_GENERIC",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 1
+      }
+    },
+    {
       "skinName": "JU87D3_SKIN_01",
       "planeType": "ju87d3",
       "startDate": "19421101",

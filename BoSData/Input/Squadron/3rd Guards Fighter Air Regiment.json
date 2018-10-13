@@ -29,6 +29,28 @@
   },
   "skins": [
     {
+      "skinName": "VVS_GREEN_BLACK_3RD",
+      "archTypes": ["lagg"],
+      "startDate": "19420906",
+      "endDate": "19430630",
+      "squadId": 10111003,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREEN_BLACK"
+    },
+    {
+      "skinName": "VVS_GREY_3RD",
+      "archTypes": ["lagg"],
+      "startDate": "19430701",
+      "endDate": "19450503",
+      "squadId": 10111003,
+      "country": "Russia",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "VVS_GREY"
+    },
+    {
       "skinName": "LA5S8_SKIN_01",
       "planeType": "la5s8",
       "startDate": "19421101",
