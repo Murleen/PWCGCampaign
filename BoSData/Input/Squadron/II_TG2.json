@@ -4,6 +4,8 @@
   "name": "II./TG2",
   "fileName": "II_TG2.json",
   "skill": 90,
+  "unitIdCode": "8T",
+  "subUnitIdCode": "S",
   "planeAssignments": [
     {
       "archType": "ju52",

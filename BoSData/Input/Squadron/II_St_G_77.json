@@ -4,6 +4,8 @@
   "name": "II./St.G.77",
   "fileName": "II_St_G_77.json",
   "skill": 60,
+  "unitIdCode": "S2",
+  "subUnitIdCode": "N",
   "planeAssignments": [
     {
       "archType": "ju87",

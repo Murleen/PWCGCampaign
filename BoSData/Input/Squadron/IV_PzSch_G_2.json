@@ -4,6 +4,7 @@
   "name": "IV(Pz)./Sch.G.2",
   "fileName": "IV_PzSch_G_2.json",
   "skill": 70,
+  "subUnitIdCode": "\u25b2",
   "planeAssignments": [
     {
       "archType": "hs129",

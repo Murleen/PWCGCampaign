@@ -55,6 +55,8 @@ public class Squadron
     private String name = "";
     private String fileName = "";
 	private int skill = 50;
+	private String unitIdCode;
+	private String subUnitIdCode;
 	private List<SquadronPlaneAssignment> planeAssignments = new ArrayList<>();
     private Map<Date, String> airfields = new TreeMap<>();
 	private List<Skin> skins = new ArrayList<Skin>();
@@ -825,5 +827,35 @@ public class Squadron
     public void setPlaneAssignments(List<SquadronPlaneAssignment> planeAssignments)
     {
         this.planeAssignments = planeAssignments;
+    }
+
+    public String determineUnitIdCode(Date date) throws PWCGException {
+        String code = unitIdCode;
+
+        if (date != null)
+        {
+            SquadHistoryEntry squadHistoryEntry = getSquadronHistoryEntryForDate(date);
+            if (squadHistoryEntry != null)
+            {
+                code = squadHistoryEntry.getUnitIdCode();
+             }
+        }
+
+        return code;
+    }
+
+    public String determineSubUnitIdCode(Date date) throws PWCGException {
+        String code = subUnitIdCode;
+
+        if (date != null)
+        {
+            SquadHistoryEntry squadHistoryEntry = getSquadronHistoryEntryForDate(date);
+            if (squadHistoryEntry != null)
+            {
+                code = squadHistoryEntry.getSubUnitIdCode();
+             }
+        }
+
+        return code;
     }
 }

@@ -25,6 +25,8 @@ import javax.imageio.ImageIO;
 
 import pwcg.campaign.Campaign;
 import pwcg.campaign.context.PWCGContext;
+import pwcg.campaign.squadron.Squadron;
+import pwcg.core.exception.PWCGException;
 import pwcg.core.utils.DDSWriter;
 import pwcg.gui.dialogs.FontCache;
 import pwcg.gui.dialogs.ImageCache;
@@ -76,8 +78,9 @@ public class SkinTemplate {
     {
         private Object[] values;
 
-        public SkinTemplateInstance(Campaign campaign, PlaneMcu plane, Map<String, Object> overrides)
+        public SkinTemplateInstance(Campaign campaign, PlaneMcu plane, Map<String, Object> overrides) throws PWCGException
         {
+            Squadron squadron = PWCGContext.getInstance().getSquadronManager().getSquadron(plane.getSquadronId());
             values = new Object[parameters.length];
 
             for (int i = 0; i < parameters.length; i++)
@@ -87,6 +90,10 @@ public class SkinTemplate {
 
                 if (overrides != null && overrides.containsKey(param))
                     value = overrides.get(param);
+                else if (param.equals("UNIT_ID_CODE"))
+                    value = squadron.determineUnitIdCode(campaign.getDate());
+                else if (param.equals("SUB_UNIT_ID_CODE"))
+                    value = squadron.determineSubUnitIdCode(campaign.getDate());
                 else if (param.equals("AIRCRAFT_ID_CODE"))
                     value = plane.getAircraftIdCode();
                 else if (param.equals("WINTER")) {
@@ -222,7 +229,7 @@ public class SkinTemplate {
         }
     }
 
-    public SkinTemplateInstance instantiate(Campaign campaign, PlaneMcu plane, Map<String, Object> overrides)
+    public SkinTemplateInstance instantiate(Campaign campaign, PlaneMcu plane, Map<String, Object> overrides) throws PWCGException
     {
         return new SkinTemplateInstance(campaign, plane, overrides);
     }
