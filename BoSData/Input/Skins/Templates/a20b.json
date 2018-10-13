@@ -1,0 +1,39 @@
+{
+  "templates": {
+    "vvs_green": {
+      "templateName": "VVS_GREEN",
+      "planeType": "a20b",
+      "credit": "Based on official 4K template",
+      "parameters": [
+        "AIRCRAFT_ID_CODE",
+        "WINTER"
+      ],
+      "defs": [
+        {
+          "text": "{0}",
+          "horizAlign": "LEFT",
+          "vertAlign": "BOTTOM",
+          "font": "VVSNumbers2.otf",
+          "size": 210,
+          "x": 3736,
+          "y": 3048,
+          "orientation": 0,
+          "fillColor": "{1,choice,0#e7e7e7|1#912617}"
+        },
+        {
+          "text": "{0}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "BOTTOM",
+          "font": "VVSNumbers2.otf",
+          "size": 210,
+          "x": 3736,
+          "y": 792,
+          "orientation": 180,
+          "fillColor": "{1,choice,0#e7e7e7|1#912617}"
+        }
+      ],
+      "baseImagePath": "a20b_vvs_{1,choice,0#green|1#winter}_base.png",
+      "weatherImagePath": "a20b_weather.png"
+    }
+  }
+}

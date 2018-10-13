@@ -1,0 +1,38 @@
+{
+  "templates": {
+    "vvs_green_grey": {
+      "templateName": "VVS_GREEN_GREY",
+      "planeType": "spitfiremkvb",
+      "credit": "Based on ICDP's 4K template",
+      "parameters": [
+        "AIRCRAFT_ID_CODE"
+      ],
+      "defs": [
+        {
+          "text": "{0}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "BOTTOM",
+          "font": "VVSNumbers2.otf",
+          "size": 420,
+          "x": 1933,
+          "y": 2860,
+          "orientation": 0,
+          "fillColor": "e7e7e7"
+        },
+        {
+          "text": "{0}",
+          "horizAlign": "LEFT",
+          "vertAlign": "BOTTOM",
+          "font": "VVSNumbers2.otf",
+          "size": 420,
+          "x": 1933,
+          "y": 1992,
+          "orientation": 180,
+          "fillColor": "e7e7e7"
+        }
+      ],
+      "baseImagePath": "spitfiremkvb_vvs_green_grey_base.png",
+      "weatherImagePath": "spitfiremkvb_weather.png"
+    }
+  }
+}
