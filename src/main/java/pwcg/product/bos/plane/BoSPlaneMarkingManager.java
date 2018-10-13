@@ -68,4 +68,42 @@ public class BoSPlaneMarkingManager implements IPlaneMarkingManager {
             equippedPlane.setAircraftIdCode(Integer.toString(code));
         }
     }
+
+    @Override
+    public String determineDisplayMarkings(Campaign campaign, EquippedPlane equippedPlane) throws PWCGException {
+        Squadron squadron = PWCGContext.getInstance().getSquadronManager().getSquadron(equippedPlane.getSquadronId());
+
+        if (squadron.getService() == BoSServiceManager.LUFTWAFFE)
+        {
+            if (squadron.determineSquadronPrimaryRole(campaign.getDate()) == Role.ROLE_FIGHTER)
+            {
+                return equippedPlane.getAircraftIdCode() + "+" + squadron.determineSubUnitIdCode(campaign.getDate());
+            } else {
+                if (squadron.determineSquadronPrimaryRole(campaign.getDate()) == Role.ROLE_ATTACK &&
+                        squadron.determineUnitIdCode(campaign.getDate()) == null)
+                {
+                    return equippedPlane.getAircraftIdCode() + "+" + squadron.determineSubUnitIdCode(campaign.getDate());
+                }
+                else
+                {
+                    return squadron.determineUnitIdCode(campaign.getDate()) +
+                            "+" +
+                            equippedPlane.getAircraftIdCode() +
+                            squadron.determineSubUnitIdCode(campaign.getDate());
+                }
+            }
+        }
+        else if (squadron.getService() == BoSServiceManager.VVS)
+        {
+            return equippedPlane.getAircraftIdCode();
+        }
+        else if (squadron.getService() == BoSServiceManager.REGIA_AERONAUTICA)
+        {
+            return squadron.determineUnitIdCode(campaign.getDate()) +
+                    "-" +
+                    equippedPlane.getAircraftIdCode();
+        }
+
+        return Integer.toString(equippedPlane.getSerialNumber());
+    }
 }
