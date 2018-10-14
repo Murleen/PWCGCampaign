@@ -45,6 +45,11 @@
       "value": 0,
       "label": "Generate skins",
       "help": "0 \u003d Skin generation disabled, 1 \u003d Generate skins for player flight only, 2 \u003d Generate skins for all planes"
+    },
+    "GenerateSkinsLimit": {
+      "value": 20,
+      "label": "Skin generation limit",
+      "help": "Maximum number of skins in one go, 0 for no limit"
     }
   }
 }
