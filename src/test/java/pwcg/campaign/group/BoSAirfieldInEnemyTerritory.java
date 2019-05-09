@@ -80,4 +80,13 @@ public class BoSAirfieldInEnemyTerritory extends AirfieldInEnemyTerritory
         airfieldFinder.findEnemy(FrontMapIdentifier.BODENPLATTE_MAP, DateUtils.getDateYYYYMMDD("19440901"), DateUtils.getDateYYYYMMDD("19450503"));
     }
 
+    @Test
+    public void airfieldCheckProkhorovkaTest() throws PWCGException 
+    {
+        PWCGContext.getInstance().changeContext(FrontMapIdentifier.PROKHOROVKA_MAP);
+
+        BoSAirfieldInEnemyTerritory airfieldFinder = new BoSAirfieldInEnemyTerritory();
+        airfieldFinder.findEnemy(FrontMapIdentifier.PROKHOROVKA_MAP, DateUtils.getDateYYYYMMDD("19430701"), DateUtils.getDateYYYYMMDD("19430831"));
+    }
+
 }

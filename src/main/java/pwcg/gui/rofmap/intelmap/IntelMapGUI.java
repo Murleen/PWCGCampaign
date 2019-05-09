@@ -265,6 +265,12 @@ public class IntelMapGUI extends MapGUI implements ActionListener
             {
                 mapGrid.add(makeRadioButton(PWCGMap.BODENPLATTE_MAP_NAME, MAP_DELIMITER + PWCGMap.BODENPLATTE_MAP_NAME, mapButtonGroup));
             }
+
+            PWCGMap prokhorovkaMap = PWCGContext.getInstance().getMapByMapId(FrontMapIdentifier.PROKHOROVKA_MAP);
+            if (prokhorovkaMap.getFrontDatesForMap().isMapActive(campaign.getDate()))
+            {
+                mapGrid.add(makeRadioButton(PWCGMap.PROKHOROVKA_MAP_NAME, MAP_DELIMITER + PWCGMap.PROKHOROVKA_MAP_NAME, mapButtonGroup));
+            }
         }
         else if (PWCGContext.getProduct() == PWCGProduct.FC)
         {

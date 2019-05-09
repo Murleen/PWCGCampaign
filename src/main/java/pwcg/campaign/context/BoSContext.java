@@ -53,11 +53,13 @@ public class BoSContext extends PWCGContextBase implements IPWCGContextManager
         PWCGMap stalingradMap = PWCGMapFactory.getMap(FrontMapIdentifier.STALINGRAD_MAP);
         PWCGMap kubanMap = PWCGMapFactory.getMap(FrontMapIdentifier.KUBAN_MAP);
         PWCGMap bodenplatteMap = PWCGMapFactory.getMap(FrontMapIdentifier.BODENPLATTE_MAP);
+        PWCGMap prokhorovkaMap = PWCGMapFactory.getMap(FrontMapIdentifier.PROKHOROVKA_MAP);
         
         pwcgMaps.put(moscowMap.getMapIdentifier(), moscowMap);
         pwcgMaps.put(stalingradMap.getMapIdentifier(), stalingradMap);
         pwcgMaps.put(kubanMap.getMapIdentifier(), kubanMap);
         pwcgMaps.put(bodenplatteMap.getMapIdentifier(), bodenplatteMap);
+        pwcgMaps.put(prokhorovkaMap.getMapIdentifier(), prokhorovkaMap);
 
         super.initialize();
     }

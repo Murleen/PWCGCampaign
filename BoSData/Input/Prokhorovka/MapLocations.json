@@ -1,0 +1,2956 @@
+{
+  "locationSetName": "MapLocations",
+  "locations": [
+    {
+      "name": "Rybinskie Budy",
+      "position": {
+        "xPos": 129549.398,
+        "yPos": 184.766,
+        "zPos": 49043.399
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Lunevka",
+      "position": {
+        "xPos": 132527.003,
+        "yPos": 179.186,
+        "zPos": 58676.648
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Oboyan'",
+      "position": {
+        "xPos": 130642.638,
+        "yPos": 175.774,
+        "zPos": 71073.285
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Troitskoe",
+      "position": {
+        "xPos": 128045.993,
+        "yPos": 208.095,
+        "zPos": 84878.161
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Marino",
+      "position": {
+        "xPos": 132661.192,
+        "yPos": 241.838,
+        "zPos": 100905.89
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bol. Sety",
+      "position": {
+        "xPos": 129073.034,
+        "yPos": 234.359,
+        "zPos": 114879.492
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ukolovo",
+      "position": {
+        "xPos": 130544.969,
+        "yPos": 239.184,
+        "zPos": 126959.175
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Chuevo",
+      "position": {
+        "xPos": 121784.874,
+        "yPos": 254.748,
+        "zPos": 129426.462
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Vyazovoe",
+      "position": {
+        "xPos": 123755.253,
+        "yPos": 247.702,
+        "zPos": 122548.23
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Nijne-Gusynka",
+      "position": {
+        "xPos": 118474.084,
+        "yPos": 193.117,
+        "zPos": 113094.871
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Verkh. Ol'shanka",
+      "position": {
+        "xPos": 124103.081,
+        "yPos": 222.176,
+        "zPos": 101083.622
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Malaya Psinka",
+      "position": {
+        "xPos": 118127.57,
+        "yPos": 185.828,
+        "zPos": 90963.491
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bolshaya Psinka",
+      "position": {
+        "xPos": 124042.661,
+        "yPos": 208.948,
+        "zPos": 87344.631
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Pavlovka",
+      "position": {
+        "xPos": 124272.151,
+        "yPos": 159.355,
+        "zPos": 59880.035
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Dolgie Budy",
+      "position": {
+        "xPos": 125570.198,
+        "yPos": 170.666,
+        "zPos": 34065.1
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Peny",
+      "position": {
+        "xPos": 114413.685,
+        "yPos": 168.132,
+        "zPos": 45871.467
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Studenok",
+      "position": {
+        "xPos": 113978.849,
+        "yPos": 201.715,
+        "zPos": 54171.011
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ivnya",
+      "position": {
+        "xPos": 113987.151,
+        "yPos": 214.233,
+        "zPos": 61541.269
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kurasovka",
+      "position": {
+        "xPos": 114566.932,
+        "yPos": 198.365,
+        "zPos": 66870.482
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kruglik",
+      "position": {
+        "xPos": 108063.176,
+        "yPos": 232.27,
+        "zPos": 64999.027
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kalinovka",
+      "position": {
+        "xPos": 107297.468,
+        "yPos": 205.244,
+        "zPos": 68843.079
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Vladimirovka",
+      "position": {
+        "xPos": 113296.795,
+        "yPos": 189.607,
+        "zPos": 70703.081
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Novoselovka",
+      "position": {
+        "xPos": 107658.402,
+        "yPos": 216.6,
+        "zPos": 74451.683
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Orlovka",
+      "position": {
+        "xPos": 115341.487,
+        "yPos": 198.204,
+        "zPos": 76635.786
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kochetovka",
+      "position": {
+        "xPos": 109759.641,
+        "yPos": 173.306,
+        "zPos": 83090.435
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krasniy Oktyabr",
+      "position": {
+        "xPos": 110175.567,
+        "yPos": 184.646,
+        "zPos": 89286.93
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Veseliy",
+      "position": {
+        "xPos": 113631.173,
+        "yPos": 177.999,
+        "zPos": 90434.099
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Klyuchi",
+      "position": {
+        "xPos": 110739.569,
+        "yPos": 205.285,
+        "zPos": 90072.437
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Yudinka",
+      "position": {
+        "xPos": 109082.065,
+        "yPos": 185.041,
+        "zPos": 90282.226
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Vasyl'evka",
+      "position": {
+        "xPos": 108896.403,
+        "yPos": 187.925,
+        "zPos": 92278.118
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Andrevka",
+      "position": {
+        "xPos": 109032.775,
+        "yPos": 188.496,
+        "zPos": 93587.291
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Mikhaylovka",
+      "position": {
+        "xPos": 109660.088,
+        "yPos": 186.398,
+        "zPos": 94323.701
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Prelestnoye",
+      "position": {
+        "xPos": 110503.018,
+        "yPos": 188.004,
+        "zPos": 95141.074
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Polezhaev",
+      "position": {
+        "xPos": 112522.295,
+        "yPos": 190.828,
+        "zPos": 95124.662
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Petrovka",
+      "position": {
+        "xPos": 112358.648,
+        "yPos": 195.058,
+        "zPos": 97033.874
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "svh. im. Voroshilova",
+      "position": {
+        "xPos": 114213.311,
+        "yPos": 201.936,
+        "zPos": 97297.527
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Beregovoye",
+      "position": {
+        "xPos": 114577.199,
+        "yPos": 191.194,
+        "zPos": 99175.968
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "svh. Oktyabyrskiy",
+      "position": {
+        "xPos": 109032.664,
+        "yPos": 236.038,
+        "zPos": 98259.958
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "svh. Stalynsk. otd.",
+      "position": {
+        "xPos": 106905.257,
+        "yPos": 246.434,
+        "zPos": 98769.081
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Yamki",
+      "position": {
+        "xPos": 107550.466,
+        "yPos": 213.456,
+        "zPos": 100269.736
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Lutovo",
+      "position": {
+        "xPos": 108968.737,
+        "yPos": 248.229,
+        "zPos": 101306.165
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Grushki",
+      "position": {
+        "xPos": 108350.516,
+        "yPos": 228.345,
+        "zPos": 104342.72
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Prokhorovka",
+      "position": {
+        "xPos": 110531.551,
+        "yPos": 255.148,
+        "zPos": 103116.968
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kusty",
+      "position": {
+        "xPos": 113244.867,
+        "yPos": 243.014,
+        "zPos": 101881.613
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Lipovka",
+      "position": {
+        "xPos": 113472.154,
+        "yPos": 242.55,
+        "zPos": 104309.039
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Tihaya Padina",
+      "position": {
+        "xPos": 112422.12,
+        "yPos": 227.688,
+        "zPos": 105727.307
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Mordovka",
+      "position": {
+        "xPos": 110718.528,
+        "yPos": 235.009,
+        "zPos": 105211.605
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krasnoye",
+      "position": {
+        "xPos": 107132.028,
+        "yPos": 241.317,
+        "zPos": 107812.622
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Prisnachnoe",
+      "position": {
+        "xPos": 110685.401,
+        "yPos": 249.632,
+        "zPos": 111695.411
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kholodnoe",
+      "position": {
+        "xPos": 107500.41,
+        "yPos": 236.594,
+        "zPos": 129426.034
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Vobrava",
+      "position": {
+        "xPos": 99892.506,
+        "yPos": 181.506,
+        "zPos": 35786.541
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Nishnie Peny",
+      "position": {
+        "xPos": 106105.215,
+        "yPos": 161.315,
+        "zPos": 48608.847
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Vishnie Peny",
+      "position": {
+        "xPos": 102273.016,
+        "yPos": 170.261,
+        "zPos": 51937.385
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Melovoe",
+      "position": {
+        "xPos": 96862.933,
+        "yPos": 156.426,
+        "zPos": 55643.603
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Novenkoe",
+      "position": {
+        "xPos": 103642.272,
+        "yPos": 176.08,
+        "zPos": 61720.631
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Verolen'ye",
+      "position": {
+        "xPos": 101107.052,
+        "yPos": 239.187,
+        "zPos": 71634.829
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Gremuchiy",
+      "position": {
+        "xPos": 97235.135,
+        "yPos": 219.716,
+        "zPos": 75997.417
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Sukho Solotino",
+      "position": {
+        "xPos": 105737.229,
+        "yPos": 202.354,
+        "zPos": 79580.275
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krasnaya Polyana",
+      "position": {
+        "xPos": 100328.376,
+        "yPos": 221.467,
+        "zPos": 79189.932
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Greznoye",
+      "position": {
+        "xPos": 105939.071,
+        "yPos": 195.588,
+        "zPos": 87804.167
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Mal. Mayachki",
+      "position": {
+        "xPos": 103349.272,
+        "yPos": 189.189,
+        "zPos": 87353.135
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Luchki (North)",
+      "position": {
+        "xPos": 97922.335,
+        "yPos": 240.708,
+        "zPos": 87353.135
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ozerovskiy",
+      "position": {
+        "xPos": 98405.52,
+        "yPos": 231.29,
+        "zPos": 91832.841
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kalinin",
+      "position": {
+        "xPos": 98623.762,
+        "yPos": 236.534,
+        "zPos": 92720.357
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "h. Teterevino",
+      "position": {
+        "xPos": 101970.131,
+        "yPos": 243.344,
+        "zPos": 91992.885
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Yasnaya Polyana",
+      "position": {
+        "xPos": 100908.022,
+        "yPos": 229.846,
+        "zPos": 93520.575
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Belenikhino",
+      "position": {
+        "xPos": 99525.827,
+        "yPos": 228.186,
+        "zPos": 95470.199
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ivanovka",
+      "position": {
+        "xPos": 99453.079,
+        "yPos": 157.083,
+        "zPos": 96706.901
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Leski",
+      "position": {
+        "xPos": 96746.885,
+        "yPos": 227.218,
+        "zPos": 97448.922
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Svh. Komsomolets",
+      "position": {
+        "xPos": 104735.811,
+        "yPos": 226.616,
+        "zPos": 94460.984
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ivanovskiy viselok",
+      "position": {
+        "xPos": 103557.307,
+        "yPos": 236.948,
+        "zPos": 95086.61
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Storozhevoye",
+      "position": {
+        "xPos": 104764.91,
+        "yPos": 231.071,
+        "zPos": 97676.408
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Vinogradovka",
+      "position": {
+        "xPos": 102437.001,
+        "yPos": 167.838,
+        "zPos": 97894.65
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Pravorot",
+      "position": {
+        "xPos": 103907.697,
+        "yPos": 248.511,
+        "zPos": 103505.271
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Zhilomostnoye",
+      "position": {
+        "xPos": 100663.174,
+        "yPos": 216.827,
+        "zPos": 102588.657
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Mal. Yablonovo",
+      "position": {
+        "xPos": 98058.826,
+        "yPos": 227.76,
+        "zPos": 101933.932
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Plota",
+      "position": {
+        "xPos": 97913.332,
+        "yPos": 225.64,
+        "zPos": 104436.434
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bolshiye Podyarugi",
+      "position": {
+        "xPos": 96994.386,
+        "yPos": 230.94,
+        "zPos": 118894.24
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bol'shoy",
+      "position": {
+        "xPos": 100025.893,
+        "yPos": 233.083,
+        "zPos": 120581.097
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Novoslobodka",
+      "position": {
+        "xPos": 88381.275,
+        "yPos": 216.971,
+        "zPos": 123447.097
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Tonen'kiy",
+      "position": {
+        "xPos": 94011.904,
+        "yPos": 236.124,
+        "zPos": 122501.384
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Aleksandrovka",
+      "position": {
+        "xPos": 89284.063,
+        "yPos": 234.006,
+        "zPos": 115519.577
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "1-y Novoalekseevskiy viselok",
+      "position": {
+        "xPos": 88425.646,
+        "yPos": 225.864,
+        "zPos": 114079.183
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Avdeevka",
+      "position": {
+        "xPos": 95176.582,
+        "yPos": 152.777,
+        "zPos": 113104.371
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kurakovka",
+      "position": {
+        "xPos": 88483.844,
+        "yPos": 222.778,
+        "zPos": 111125.649
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Vypolzovka",
+      "position": {
+        "xPos": 92892.322,
+        "yPos": 135.945,
+        "zPos": 109932.595
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Rjavets",
+      "position": {
+        "xPos": 91119.622,
+        "yPos": 141.384,
+        "zPos": 109405.11
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Shipy",
+      "position": {
+        "xPos": 92545.466,
+        "yPos": 149.539,
+        "zPos": 108692.187
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Rydinka",
+      "position": {
+        "xPos": 91614.303,
+        "yPos": 139.82,
+        "zPos": 108313.902
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Sholokovo",
+      "position": {
+        "xPos": 89708.327,
+        "yPos": 129.462,
+        "zPos": 107644.628
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Strel'nikov",
+      "position": {
+        "xPos": 86420.156,
+        "yPos": 134.279,
+        "zPos": 106204.235
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Shahovo",
+      "position": {
+        "xPos": 92414.522,
+        "yPos": 220.921,
+        "zPos": 103265.25
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kleymenovo",
+      "position": {
+        "xPos": 89024.504,
+        "yPos": 223.485,
+        "zPos": 102814.217
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Chursino",
+      "position": {
+        "xPos": 88947.979,
+        "yPos": 220.249,
+        "zPos": 101498.495
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Teterevino",
+      "position": {
+        "xPos": 92095.157,
+        "yPos": 221.744,
+        "zPos": 95005.422
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Rozhdestvenka",
+      "position": {
+        "xPos": 87293.845,
+        "yPos": 139.392,
+        "zPos": 93914.215
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Petrovskiy",
+      "position": {
+        "xPos": 89432.612,
+        "yPos": 150.956,
+        "zPos": 91950.042
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Nechaevka",
+      "position": {
+        "xPos": 91425.884,
+        "yPos": 159.965,
+        "zPos": 91178.922
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Luchki",
+      "position": {
+        "xPos": 92560.739,
+        "yPos": 150.258,
+        "zPos": 90393.252
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Sabachevskiy",
+      "position": {
+        "xPos": 96027.123,
+        "yPos": 154.482,
+        "zPos": 91988.867
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bol. Mayachki",
+      "position": {
+        "xPos": 97025.811,
+        "yPos": 226.209,
+        "zPos": 83903.072
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Pokrovka",
+      "position": {
+        "xPos": 94936.235,
+        "yPos": 190.119,
+        "zPos": 82139.697
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Yakovlevo",
+      "position": {
+        "xPos": 91648.064,
+        "yPos": 180.838,
+        "zPos": 82881.718
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Solonets",
+      "position": {
+        "xPos": 89945.781,
+        "yPos": 216.034,
+        "zPos": 80830.248
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Koz'ma-Dem'yanovka",
+      "position": {
+        "xPos": 86898.39,
+        "yPos": 183.316,
+        "zPos": 82492.006
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Vorskla",
+      "position": {
+        "xPos": 86520.513,
+        "yPos": 195.8,
+        "zPos": 81721.777
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ol'khovka",
+      "position": {
+        "xPos": 87473.058,
+        "yPos": 188.322,
+        "zPos": 77662.591
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Syrtsev",
+      "position": {
+        "xPos": 92333.133,
+        "yPos": 210.38,
+        "zPos": 74530.542
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Syrtsevo",
+      "position": {
+        "xPos": 95794.902,
+        "yPos": 194.864,
+        "zPos": 70761.764
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Lukhanino",
+      "position": {
+        "xPos": 91366.833,
+        "yPos": 177.221,
+        "zPos": 69805.178
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Alekseevka",
+      "position": {
+        "xPos": 91715.09,
+        "yPos": 180.527,
+        "zPos": 66561.003
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Zavidovka",
+      "position": {
+        "xPos": 91236.797,
+        "yPos": 169.454,
+        "zPos": 61392.352
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Berezovka",
+      "position": {
+        "xPos": 96292.491,
+        "yPos": 229.74,
+        "zPos": 65933.963
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Chapaev",
+      "position": {
+        "xPos": 94209.602,
+        "yPos": 179.62,
+        "zPos": 60209.875
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krasniy-Pochinok",
+      "position": {
+        "xPos": 87423.078,
+        "yPos": 204.773,
+        "zPos": 58323.59
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kobylevka",
+      "position": {
+        "xPos": 89135.675,
+        "yPos": 179.338,
+        "zPos": 50964.048
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Rakhitnoe",
+      "position": {
+        "xPos": 89217.883,
+        "yPos": 189.707,
+        "zPos": 40868.202
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Proletarskiy",
+      "position": {
+        "xPos": 84028.418,
+        "yPos": 223.214,
+        "zPos": 35443.415
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Korovino",
+      "position": {
+        "xPos": 84398.25,
+        "yPos": 232.565,
+        "zPos": 58241.881
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Gertsovka",
+      "position": {
+        "xPos": 80401.807,
+        "yPos": 193.306,
+        "zPos": 57281.495
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Novaya Goryanka",
+      "position": {
+        "xPos": 76730.655,
+        "yPos": 201.43,
+        "zPos": 53176.622
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Chrkasskoe",
+      "position": {
+        "xPos": 85030.236,
+        "yPos": 190.477,
+        "zPos": 62902.31
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Butovo",
+      "position": {
+        "xPos": 80785.951,
+        "yPos": 192.937,
+        "zPos": 63971.126
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Visokoe",
+      "position": {
+        "xPos": 76588.136,
+        "yPos": 199.307,
+        "zPos": 63661.324
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kazatkskoe",
+      "position": {
+        "xPos": 77285.19,
+        "yPos": 196.335,
+        "zPos": 68602.663
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Trirechnoe",
+      "position": {
+        "xPos": 82915.437,
+        "yPos": 179.729,
+        "zPos": 71296.5
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Dragunskoe",
+      "position": {
+        "xPos": 78872.523,
+        "yPos": 166.173,
+        "zPos": 71497.872
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Zadel'noe",
+      "position": {
+        "xPos": 80793.295,
+        "yPos": 191.707,
+        "zPos": 78561.353
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kamenniy Log",
+      "position": {
+        "xPos": 81916.403,
+        "yPos": 183.502,
+        "zPos": 79749.033
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bikovka",
+      "position": {
+        "xPos": 84958.25,
+        "yPos": 198.256,
+        "zPos": 82095.871
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Berezov",
+      "position": {
+        "xPos": 77786.338,
+        "yPos": 198.36,
+        "zPos": 83304.098
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Gremuchiy",
+      "position": {
+        "xPos": 76654.007,
+        "yPos": 145.246,
+        "zPos": 85942.554
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Smorodino",
+      "position": {
+        "xPos": 85638.26,
+        "yPos": 228.799,
+        "zPos": 89443.314
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Nepkhaevo",
+      "position": {
+        "xPos": 84449.007,
+        "yPos": 133.277,
+        "zPos": 93832.966
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Soshenkov",
+      "position": {
+        "xPos": 82110.003,
+        "yPos": 133.537,
+        "zPos": 94235.708
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Visloe",
+      "position": {
+        "xPos": 79290.807,
+        "yPos": 131.098,
+        "zPos": 94049.827
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Gostishevo",
+      "position": {
+        "xPos": 82094.513,
+        "yPos": 212.247,
+        "zPos": 97813.919
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Sazhnoe",
+      "position": {
+        "xPos": 84665.868,
+        "yPos": 133.532,
+        "zPos": 100227.056
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krivtsovo",
+      "position": {
+        "xPos": 84185.675,
+        "yPos": 131.646,
+        "zPos": 104610.751
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Sabynino",
+      "position": {
+        "xPos": 80235.702,
+        "yPos": 137.511,
+        "zPos": 103185.663
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kyselevo",
+      "position": {
+        "xPos": 77153.174,
+        "yPos": 127.668,
+        "zPos": 101109.991
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Novo-Oskochnoe",
+      "position": {
+        "xPos": 85177.041,
+        "yPos": 211.54,
+        "zPos": 107956.611
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Verkhniy Ol'shanets",
+      "position": {
+        "xPos": 81738.241,
+        "yPos": 217.739,
+        "zPos": 109815.421
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kasach'ye",
+      "position": {
+        "xPos": 85842.739,
+        "yPos": 221.965,
+        "zPos": 113035.374
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Alekseevka",
+      "position": {
+        "xPos": 80762.741,
+        "yPos": 148.745,
+        "zPos": 124735.202
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ushakovo",
+      "position": {
+        "xPos": 69376.83,
+        "yPos": 122.817,
+        "zPos": 117374.733
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Sheino",
+      "position": {
+        "xPos": 70817.408,
+        "yPos": 216.476,
+        "zPos": 113254.369
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Mazikino",
+      "position": {
+        "xPos": 74627.97,
+        "yPos": 188.589,
+        "zPos": 113207.899
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kalinina",
+      "position": {
+        "xPos": 68575.631,
+        "yPos": 131.611,
+        "zPos": 107990.852
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Melikhovo",
+      "position": {
+        "xPos": 72897.367,
+        "yPos": 207.992,
+        "zPos": 107216.348
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Shlyakhovoe",
+      "position": {
+        "xPos": 74926.569,
+        "yPos": 214.069,
+        "zPos": 108827.317
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Dal'naya-Ighumenka",
+      "position": {
+        "xPos": 71518.749,
+        "yPos": 198.361,
+        "zPos": 103374.805
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Khokhlovo",
+      "position": {
+        "xPos": 74053.71,
+        "yPos": 128.182,
+        "zPos": 99490.76
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Petropavlovka",
+      "position": {
+        "xPos": 71993.528,
+        "yPos": 125.234,
+        "zPos": 97120.776
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Belomestnaya",
+      "position": {
+        "xPos": 70878.241,
+        "yPos": 117.024,
+        "zPos": 96377.251
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ternovka",
+      "position": {
+        "xPos": 76237.812,
+        "yPos": 140.905,
+        "zPos": 93805.896
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Shopino",
+      "position": {
+        "xPos": 74007.239,
+        "yPos": 126.059,
+        "zPos": 92613.16
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Yerik",
+      "position": {
+        "xPos": 75070.642,
+        "yPos": 149.771,
+        "zPos": 87474.194
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Yakhontov",
+      "position": {
+        "xPos": 75829.656,
+        "yPos": 172.836,
+        "zPos": 82300.504
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Rakovo",
+      "position": {
+        "xPos": 73831.434,
+        "yPos": 145.266,
+        "zPos": 82470.895
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Streletskoe",
+      "position": {
+        "xPos": 75785.867,
+        "yPos": 158.273,
+        "zPos": 71613.474
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Tomarovka",
+      "position": {
+        "xPos": 71565.219,
+        "yPos": 150.816,
+        "zPos": 67910.151
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Moshyonoe",
+      "position": {
+        "xPos": 71921.491,
+        "yPos": 184.001,
+        "zPos": 61218.432
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Zybino",
+      "position": {
+        "xPos": 73041.013,
+        "yPos": 181.197,
+        "zPos": 54235.96
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kryukovo",
+      "position": {
+        "xPos": 69772.604,
+        "yPos": 149.787,
+        "zPos": 50580.299
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Trephilovka",
+      "position": {
+        "xPos": 75418.016,
+        "yPos": 192.247,
+        "zPos": 43802.543
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Oktyabrskaya Gotnya",
+      "position": {
+        "xPos": 68493.945,
+        "yPos": 154.989,
+        "zPos": 44050.384
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Soldatskoe",
+      "position": {
+        "xPos": 75682.902,
+        "yPos": 164.751,
+        "zPos": 36246.168
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Khotmyzsk",
+      "position": {
+        "xPos": 62061.003,
+        "yPos": 202.233,
+        "zPos": 42029.501
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Borysovka",
+      "position": {
+        "xPos": 61889.434,
+        "yPos": 150.225,
+        "zPos": 52646.697
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kalynina",
+      "position": {
+        "xPos": 64459.986,
+        "yPos": 161.964,
+        "zPos": 67336.762
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Blishniy",
+      "position": {
+        "xPos": 59536.067,
+        "yPos": 180.728,
+        "zPos": 78055.695
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bolkhovets",
+      "position": {
+        "xPos": 64719.458,
+        "yPos": 126.401,
+        "zPos": 87197.952
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Arkhangelskoe",
+      "position": {
+        "xPos": 61801.156,
+        "yPos": 123.527,
+        "zPos": 90204.838
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krasnoe",
+      "position": {
+        "xPos": 60670.379,
+        "yPos": 121.061,
+        "zPos": 90561.11
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Suprunovka",
+      "position": {
+        "xPos": 60635.915,
+        "yPos": 121.662,
+        "zPos": 92415.565
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Mikchaylovka",
+      "position": {
+        "xPos": 60171.212,
+        "yPos": 120.451,
+        "zPos": 94847.509
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Stariy Gorod",
+      "position": {
+        "xPos": 62417.275,
+        "yPos": 115.63,
+        "zPos": 95931.815
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Grinevka",
+      "position": {
+        "xPos": 65825.095,
+        "yPos": 203.844,
+        "zPos": 90990.477
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Belgorod",
+      "position": {
+        "xPos": 61859.632,
+        "yPos": 139.634,
+        "zPos": 92756.347
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Myasoedovo",
+      "position": {
+        "xPos": 65138.117,
+        "yPos": 142.661,
+        "zPos": 107750.883
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Blizhnaya-Igumenka",
+      "position": {
+        "xPos": 63836.95,
+        "yPos": 188.462,
+        "zPos": 102189.941
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Sevryukovo",
+      "position": {
+        "xPos": 63620.088,
+        "yPos": 131.226,
+        "zPos": 105411.88
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Yastrebovo",
+      "position": {
+        "xPos": 61699.317,
+        "yPos": 121.411,
+        "zPos": 105102.078
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Belovskaya",
+      "position": {
+        "xPos": 60553.05,
+        "yPos": 140.453,
+        "zPos": 103816.4
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Generalovka",
+      "position": {
+        "xPos": 57021.31,
+        "yPos": 119.301,
+        "zPos": 101756.218
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "klh. Solov'ev",
+      "position": {
+        "xPos": 60010.897,
+        "yPos": 210.993,
+        "zPos": 109594.204
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "svh. Batratskaya Dacha",
+      "position": {
+        "xPos": 58291.497,
+        "yPos": 199.114,
+        "zPos": 109733.615
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Neklyudovo",
+      "position": {
+        "xPos": 60382.659,
+        "yPos": 129.002,
+        "zPos": 115534.896
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krasnaya Polyana",
+      "position": {
+        "xPos": 56666.114,
+        "yPos": 195.421,
+        "zPos": 132003.52
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Dmitrievka",
+      "position": {
+        "xPos": 49557.072,
+        "yPos": 113.178,
+        "zPos": 122711.535
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Churaevo",
+      "position": {
+        "xPos": 49685.656,
+        "yPos": 110.686,
+        "zPos": 112910.6
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Gremyachiy",
+      "position": {
+        "xPos": 52049.047,
+        "yPos": 200.608,
+        "zPos": 109185.723
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Koren'skaya Dacha",
+      "position": {
+        "xPos": 53427.665,
+        "yPos": 198.921,
+        "zPos": 109356.114
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krutoy Log",
+      "position": {
+        "xPos": 53365.705,
+        "yPos": 169.172,
+        "zPos": 103516.35
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Razumnoe",
+      "position": {
+        "xPos": 54658.777,
+        "yPos": 117.701,
+        "zPos": 99155.118
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Dorogobushino",
+      "position": {
+        "xPos": 53636.431,
+        "yPos": 117.259,
+        "zPos": 97404.737
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Niz. Ol'shanets",
+      "position": {
+        "xPos": 49949.79,
+        "yPos": 117.032,
+        "zPos": 99294.528
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Tavrovo",
+      "position": {
+        "xPos": 51426.386,
+        "yPos": 203.603,
+        "zPos": 91888.183
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Repnoye",
+      "position": {
+        "xPos": 54464.75,
+        "yPos": 201.422,
+        "zPos": 86839.323
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Andreevka",
+      "position": {
+        "xPos": 48594.005,
+        "yPos": 188.125,
+        "zPos": 81712.103
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Boldarevka",
+      "position": {
+        "xPos": 46285.982,
+        "yPos": 173.847,
+        "zPos": 81030.539
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ugrim",
+      "position": {
+        "xPos": 54773.373,
+        "yPos": 174.95,
+        "zPos": 77551.217
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bessonovka",
+      "position": {
+        "xPos": 54788.863,
+        "yPos": 198.29,
+        "zPos": 72423.997
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ishenky",
+      "position": {
+        "xPos": 51020.485,
+        "yPos": 190.538,
+        "zPos": 51417.413
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Golovchino",
+      "position": {
+        "xPos": 55828.68,
+        "yPos": 132.471,
+        "zPos": 37430.211
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Aleksandrovka",
+      "position": {
+        "xPos": 36634.228,
+        "yPos": 163.005,
+        "zPos": 38406.991
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Odnorobovka",
+      "position": {
+        "xPos": 36328.286,
+        "yPos": 220.671,
+        "zPos": 44277.869
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Udy",
+      "position": {
+        "xPos": 38806.547,
+        "yPos": 148.577,
+        "zPos": 55634.833
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Shetinovka",
+      "position": {
+        "xPos": 46029.726,
+        "yPos": 171.367,
+        "zPos": 63123.254
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Svh. Krasniy Veterinar",
+      "position": {
+        "xPos": 39121.146,
+        "yPos": 219.452,
+        "zPos": 64331.481
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Mikoyanovka",
+      "position": {
+        "xPos": 44700.311,
+        "yPos": 192.76,
+        "zPos": 76655.473
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Tolokonnoye",
+      "position": {
+        "xPos": 39356.229,
+        "yPos": 165.532,
+        "zPos": 77414.487
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Varvarovka",
+      "position": {
+        "xPos": 42764.049,
+        "yPos": 191.386,
+        "zPos": 79614.08
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Cheremoshnoe",
+      "position": {
+        "xPos": 38785.402,
+        "yPos": 219.016,
+        "zPos": 85174.915
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Brodok",
+      "position": {
+        "xPos": 45398.116,
+        "yPos": 131.378,
+        "zPos": 91345.125
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Ziborovka",
+      "position": {
+        "xPos": 36986.997,
+        "yPos": 150.028,
+        "zPos": 98625.467
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Maslova Pristan'",
+      "position": {
+        "xPos": 45969.32,
+        "yPos": 121.717,
+        "zPos": 103376.633
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Priyutovka",
+      "position": {
+        "xPos": 43240.007,
+        "yPos": 110.059,
+        "zPos": 104331.981
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Grafovka",
+      "position": {
+        "xPos": 39956.107,
+        "yPos": 189.744,
+        "zPos": 103588.456
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Bezlyudovka",
+      "position": {
+        "xPos": 39382.974,
+        "yPos": 119.674,
+        "zPos": 106547.063
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Titovka",
+      "position": {
+        "xPos": 38293.203,
+        "yPos": 113.961,
+        "zPos": 110764.77
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Shebekino",
+      "position": {
+        "xPos": 42475.527,
+        "yPos": 114.575,
+        "zPos": 115520.228
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Voznesenovka",
+      "position": {
+        "xPos": 41672.348,
+        "yPos": 118.067,
+        "zPos": 123925.979
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Nechaevka (South)",
+      "position": {
+        "xPos": 35652.205,
+        "yPos": 155.094,
+        "zPos": 93099.467
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Krestovoy",
+      "position": {
+        "xPos": 36246.67,
+        "yPos": 159.319,
+        "zPos": 75377.84
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    },
+    {
+      "name": "Kazach'ya Lopan'",
+      "position": {
+        "xPos": 32601.409,
+        "yPos": 147.805,
+        "zPos": 64584.411
+      },
+      "orientation": {
+        "xOri": 0.0,
+        "yOri": 0.0,
+        "zOri": 0.0
+      }
+    }
+  ]
+}

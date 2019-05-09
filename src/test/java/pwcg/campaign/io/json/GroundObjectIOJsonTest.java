@@ -53,6 +53,14 @@ public class GroundObjectIOJsonTest
         validateGroundStructures(mapName);        
     }
 
+    @Test
+    public void readJsonProkhorovkaTest() throws PWCGException
+    {
+        PWCGContext.setProduct(PWCGProduct.BOS);
+        String mapName = "Prokhorovka";
+        validateGroundStructures(mapName);
+    }
+
     private GroundStructureGroup validateGroundStructures(String mapName) throws PWCGException, PWCGIOException
     {
         GroundStructureGroup groundStructures = GroundObjectIOJson.readJson(mapName);

@@ -28,6 +28,7 @@ public class BoSDeploy extends DeployBase
         directoriesToCopy.put("Moscow", null);
         directoriesToCopy.put("Kuban", null);
         directoriesToCopy.put("Bodenplatte", null);        
+        directoriesToCopy.put("Prokhorovka", null);
 
 		// Moscow dates
         directoriesToCopy.put("19411001", null);

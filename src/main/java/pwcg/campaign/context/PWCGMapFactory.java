@@ -5,6 +5,7 @@ import pwcg.core.exception.PWCGException;
 import pwcg.product.bos.map.bodenplatte.BodenplatteMap;
 import pwcg.product.bos.map.kuban.KubanMap;
 import pwcg.product.bos.map.moscow.MoscowMap;
+import pwcg.product.bos.map.prokhorovka.ProkhorovkaMap;
 import pwcg.product.bos.map.stalingrad.StalingradMap;
 import pwcg.product.fc.map.arras.ArrasMap;
 
@@ -37,6 +38,11 @@ public class PWCGMapFactory
         if (frontMapIdentifier == FrontMapIdentifier.ARRAS_MAP)
         {
             map = new ArrasMap();
+            map.configure();
+        }
+        if (frontMapIdentifier == FrontMapIdentifier.PROKHOROVKA_MAP)
+        {
+            map = new ProkhorovkaMap();
             map.configure();
         }
 

@@ -26,13 +26,15 @@ public abstract class PWCGMap
         STALINGRAD_MAP,
         KUBAN_MAP,
         BODENPLATTE_MAP,
-        ARRAS_MAP
+        ARRAS_MAP,
+        PROKHOROVKA_MAP
     }
 
     public static final String MOSCOW_MAP_NAME = "Moscow";
     public static final String STALINGRAD_MAP_NAME = "Stalingrad";
     public static final String KUBAN_MAP_NAME = "Kuban";
     public static final String BODENPLATTE_MAP_NAME = "Bodenplatte";
+    public static final String PROKHOROVKA_MAP_NAME = "Prokhorovka";
 
     public static final String ARRAS_MAP_NAME = "Arras";
 
@@ -95,6 +97,7 @@ public abstract class PWCGMap
         frontNameIdentifierMap.put(STALINGRAD_MAP_NAME, FrontMapIdentifier.STALINGRAD_MAP);
         frontNameIdentifierMap.put(KUBAN_MAP_NAME, FrontMapIdentifier.KUBAN_MAP);            
         frontNameIdentifierMap.put(BODENPLATTE_MAP_NAME, FrontMapIdentifier.BODENPLATTE_MAP);            
+        frontNameIdentifierMap.put(PROKHOROVKA_MAP_NAME, FrontMapIdentifier.PROKHOROVKA_MAP);
 
         frontNameIdentifierMap.put(ARRAS_MAP_NAME, FrontMapIdentifier.ARRAS_MAP);            
 
