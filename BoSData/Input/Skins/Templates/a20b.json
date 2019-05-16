@@ -34,6 +34,153 @@
       ],
       "baseImagePath": "a20b_vvs_{1,choice,0#green|1#winter}_base.png",
       "weatherImagePath": "a20b_weather.png"
+    },
+    "raf_late_olive": {
+      "templateName": "RAF_LATE_OLIVE",
+      "planeType": "a20b",
+      "credit": "Based on official 4K template",
+      "parameters": [
+        "UNIT_ID_CODE",
+        "AIRCRAFT_ID_CODE",
+        "PILOT_RANK"
+      ],
+      "defs": [
+        {
+          "text": "{0}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "BOTTOM",
+          "font": "RAF_WW2_851ATH.otf",
+          "size": 170,
+          "x": 2987,
+          "y": 3691,
+          "orientation": 0,
+          "fillColor": "7a312a"
+        },
+        {
+          "text": "{1}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "CENTER",
+          "font": "RAF_WW2_851ATH.otf",
+          "size": 170,
+          "x": 1483,
+          "y": 3607,
+          "orientation": 0,
+          "fillColor": "7a312a"
+        },
+        {
+          "text": "{0}",
+          "horizAlign": "LEFT",
+          "vertAlign": "BOTTOM",
+          "font": "RAF_WW2_851ATH.otf",
+          "size": 170,
+          "x": 2987,
+          "y": 154,
+          "orientation": 180,
+          "fillColor": "7a312a"
+        },
+        {
+          "text": "{1}",
+          "horizAlign": "LEFT",
+          "vertAlign": "CENTER",
+          "font": "RAF_WW2_851ATH.otf",
+          "size": 170,
+          "x": 1483,
+          "y": 232,
+          "orientation": 180,
+          "fillColor": "7a312a"
+        },
+        {
+          "image": "{2,choice,0#Insignia\\raf_sqn_ldr.png|1#}",
+          "horizAlign": "LEFT",
+          "vertAlign": "TOP",
+          "x": 1111,
+          "y": 3520,
+          "width": 94,
+          "height": 51,
+          "orientation": 0
+        },
+        {
+          "image": "{2,choice,0#Insignia\\raf_sqn_ldr.png|1#}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "TOP",
+          "x": 1111,
+          "y": 320,
+          "width": 94,
+          "height": 51,
+          "orientation": 180
+        }
+      ],
+      "baseImagePath": "a20b_raf_late_olive_base.png",
+      "weatherImagePath": "a20b_weather.png"
+    },
+    "usaaf_late_olive": {
+      "templateName": "USAAF_LATE_OLIVE",
+      "planeType": "a20b",
+      "credit": "Based on official 4K template",
+      "parameters": [
+        "UNIT_ID_CODE",
+        "AIRCRAFT_ID_CODE",
+        "PILOT_NAME_RANK_UC"
+      ],
+      "defs": [
+        {
+          "text": "{0}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 220,
+          "x": 2973,
+          "y": 3693,
+          "orientation": 0,
+          "fillColor": "c6c6c6"
+        },
+        {
+          "text": "{1}",
+          "horizAlign": "LEFT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 210,
+          "x": 3439,
+          "y": 3663,
+          "orientation": 0,
+          "fillColor": "c6c6c6"
+        },
+        {
+          "text": "{0}",
+          "horizAlign": "LEFT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 220,
+          "x": 2973,
+          "y": 149,
+          "orientation": 180,
+          "fillColor": "c6c6c6"
+        },
+        {
+          "text": "{1}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 210,
+          "x": 3439,
+          "y": 179,
+          "orientation": 180,
+          "fillColor": "c6c6c6"
+        },
+        {
+          "text": "PILOT: {2}",
+          "horizAlign": "LEFT",
+          "vertAlign": "TOP",
+          "font": "Airborne.otf",
+          "size": 13,
+          "x": 1382,
+          "y": 3533,
+          "orientation": 0,
+          "fillColor": "c6c6c6"
+        }
+      ],
+      "baseImagePath": "a20b_usaaf_late_olive_base.png",
+      "weatherImagePath": "a20b_weather.png"
     }
   }
 }
