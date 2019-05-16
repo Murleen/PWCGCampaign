@@ -1,0 +1,78 @@
+{
+  "templates": {
+    "usaaf_late_bare": {
+      "templateName": "USAAF_LATE_BARE",
+      "planeType": "p47d28",
+      "credit": "Based on ICDP's 4K template",
+      "parameters": [
+        "UNIT_ID_CODE",
+        "AIRCRAFT_ID_CODE",
+        "PILOT_NAME_RANK_UC"
+      ],
+      "defs": [
+        {
+          "text": "{0}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 260,
+          "x": 2295,
+          "y": 3644,
+          "orientation": 0,
+          "fillColor": "191919",
+          "fillShine": "3f"
+        },
+        {
+          "text": "{1}",
+          "horizAlign": "LEFT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 260,
+          "x": 2887,
+          "y": 3644,
+          "orientation": 0,
+          "fillColor": "191919",
+          "fillShine": "3f"
+        },
+        {
+          "text": "{0}",
+          "horizAlign": "LEFT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 260,
+          "x": 2295,
+          "y": 2755,
+          "orientation": 180,
+          "fillColor": "191919",
+          "fillShine": "3f"
+        },
+        {
+          "text": "{1}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 260,
+          "x": 2887,
+          "y": 2755,
+          "orientation": 180,
+          "fillColor": "191919",
+          "fillShine": "3f"
+        },
+        {
+          "text": "PILOT: {2}",
+          "horizAlign": "LEFT",
+          "vertAlign": "BOTTOM",
+          "font": "Airborne.otf",
+          "size": 13,
+          "x": 1545,
+          "y": 3382,
+          "orientation": 0,
+          "fillColor": "191919",
+          "fillShine": "3f"
+        }
+      ],
+      "baseImagePath": "p47d28_usaaf_late_bare_base.png",
+      "weatherImagePath": "p47d28_weather.png"
+    }
+  }
+}
