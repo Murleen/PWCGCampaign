@@ -23,6 +23,7 @@ import java.util.Map;
 
 import pwcg.campaign.Campaign;
 import pwcg.campaign.context.PWCGContext;
+import pwcg.campaign.factory.RankFactory;
 import pwcg.campaign.squadron.Squadron;
 import pwcg.core.exception.PWCGException;
 import pwcg.core.utils.DDSWriter;
@@ -98,6 +99,12 @@ public class SkinTemplate {
                     Season season = PWCGContext.getInstance().getCurrentMap().getMapWeather().getSeason(campaign.getDate());
                     value = (season == Season.WINTER) ? 1 : 0;
                 }
+                else if (param.equals("PILOT_RANK"))
+                    value = RankFactory.createRankHelper().getRankPosByService(plane.getPilot().getRank(), plane.getPilot().determineService(campaign.getDate()));
+                else if (param.equals("PILOT_NAME_RANK"))
+                    value = plane.getPilot().getNameAndRank();
+                else if (param.equals("PILOT_NAME_RANK_UC"))
+                    value = plane.getPilot().getNameAndRank().toUpperCase();
 
                 values[i] = value;
             }
