@@ -36,7 +36,7 @@ public class DDSWriter {
         try {
             DataBufferByte dataBuffer = (DataBufferByte) image.getRaster().getDataBuffer();
             byte[] compressed = new byte[GetStorageRequirements(image.getWidth(), image.getHeight(), 4)];
-            int flags = SQUISH_FLAG_ABGR | SQUISH_FLAG_DXT5;
+            int flags = SQUISH_FLAG_ABGR | SQUISH_FLAG_DXT5 | SQUISH_FLAG_RANGEFIT;
             CompressImage(dataBuffer.getData(), image.getWidth(), image.getHeight(), image.getWidth()*4, compressed, flags, (float[])null);
 
             FileOutputStream output = new FileOutputStream(file);
