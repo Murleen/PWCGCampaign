@@ -85,7 +85,8 @@
         "date": "19440901",
         "squadName": "II./SG4",
         "armedServiceName": "Luftwaffe",
-        "skill": 45
+        "skill": 45,
+        "subUnitIdCode": "-"
       }
     ]
   },

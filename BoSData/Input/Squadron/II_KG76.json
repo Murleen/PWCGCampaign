@@ -78,7 +78,9 @@
         "date": "19440901",
         "squadName": "II./KG54",
         "armedServiceName": "Luftwaffe",
-        "skill": 45
+        "skill": 45,
+        "unitIdCode": "B3",
+        "subUnitIdCode": "N"
       }
     ]
   },

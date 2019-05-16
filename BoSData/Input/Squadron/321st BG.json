@@ -4,6 +4,7 @@
   "name": "321st Bomber Group",
   "fileName": "321st BG.json",
   "skill": 70,
+  "unitIdCode": "YQ",
   "planeAssignments": [
     {
       "archType": "a20",
@@ -23,6 +24,17 @@
     "19450404": "Koln-Butzweilerhof"
   },
   "skins": [
+    {
+      "skinName": "USAAF_LATE_OLIVE_321",
+      "archTypes": ["a20"],
+      "startDate": "19440801",
+      "endDate": "19450601",
+      "squadId": 102321445,
+      "country": "USA",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "USAAF_LATE_OLIVE"
+    },
     {
       "skinName": "321st Bomber Group",
       "planeType": "a20b",

@@ -4,6 +4,7 @@
   "name": "363rd Fighter Group",
   "fileName": "363rd FG.json",
   "skill": 70,
+  "unitIdCode": "A9",
   "planeAssignments": [
     {
       "archType": "p38",

@@ -100,7 +100,8 @@
         "date": "19440901",
         "squadName": "I./JG77",
         "armedServiceName": "Luftwaffe",
-        "skill": 50
+        "skill": 50,
+        "subUnitIdCode": ""
       }
     ]
   },
