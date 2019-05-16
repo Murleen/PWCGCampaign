@@ -15,6 +15,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.ColorModel;
 import java.awt.image.ComponentColorModel;
 import java.awt.image.DataBuffer;
+import java.awt.image.IndexColorModel;
 import java.awt.image.WritableRaster;
 import java.io.File;
 import java.text.MessageFormat;
@@ -62,6 +63,8 @@ public class SkinTemplate {
         public String fillColor;
         public int strokeWidth = 0;
         public String strokeColor;
+        public String fillShine;
+        public String strokeShine;
     }
 
     private String templateName;
@@ -130,13 +133,24 @@ public class SkinTemplate {
                                                  baseImage.getWidth(), baseImage.getHeight(),
                                                  0, 0,
                                                  bandList);
+            WritableRaster alphaRaster = baseImage.getAlphaRaster();
 
             ColorModel colorModel = new ComponentColorModel(baseImage.getColorModel().getColorSpace(), false, false, Transparency.OPAQUE, DataBuffer.TYPE_BYTE);
             BufferedImage skin = new BufferedImage(colorModel, colorOnlyRaster, false, null);
+            // Create our own 1:1 lookup table for the shininess map, as otherwise Java does weird gamma correction
+            byte[] lut = new byte[256];
+            for (int i = 0; i < 256; i++)
+                lut[i] = (byte) i;
+            ColorModel shineColorModel = new IndexColorModel(8, 256, lut, lut, lut);
+            BufferedImage shineMap = new BufferedImage(shineColorModel, alphaRaster, false, null);
 
             Graphics2D graphics = skin.createGraphics();
             graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
             graphics.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+
+            Graphics2D shineGraphics = shineMap.createGraphics();
+            shineGraphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+            shineGraphics.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
 
             AffineTransform origTransform = graphics.getTransform();
 
@@ -151,21 +165,39 @@ public class SkinTemplate {
 
                     Font font = fontCache.getFont(fontsDir + def.font, def.size);
 
+                    // Java seems to get weird values for a font's ascent/descent metrics, so measure the letter "M" instead
+                    Rectangle2D mBounds = font.createGlyphVector(graphics.getFontRenderContext(), "M").getVisualBounds();
+
                     GlyphVector glyphVector = font.layoutGlyphVector(graphics.getFontRenderContext(), text.toCharArray(), 0, text.length(), Font.LAYOUT_LEFT_TO_RIGHT);
                     bounds = glyphVector.getVisualBounds();
                     Shape outline = glyphVector.getOutline();
+                    bounds = new Rectangle2D.Double(bounds.getX(), mBounds.getY(), bounds.getWidth(), mBounds.getHeight());
 
                     setTransform(graphics, def, bounds, 1.0);
+                    shineGraphics.setTransform(graphics.getTransform());
 
                     Color fillColor = Color.decode("0x" + MessageFormat.format(def.fillColor, values));
                     graphics.setColor(fillColor);
                     graphics.fill(outline);
+
+                    if (def.fillShine != null) {
+                        Color fillShine = Color.decode("0x" + MessageFormat.format(def.fillShine + def.fillShine + def.fillShine, values));
+                        shineGraphics.setColor(fillShine);
+                        shineGraphics.fill(outline);
+                    }
 
                     if (def.strokeWidth > 0) {
                         Color strokeColor = Color.decode("0x" + MessageFormat.format(def.strokeColor, values));
                         graphics.setColor(strokeColor);
                         graphics.setStroke(new BasicStroke(def.strokeWidth));
                         graphics.draw(outline);
+
+                        if (def.strokeShine != null) {
+                            Color strokeShine = Color.decode("0x" + MessageFormat.format(def.strokeShine + def.strokeShine + def.strokeShine, values));
+                            shineGraphics.setColor(strokeShine);
+                            shineGraphics.setStroke(new BasicStroke(def.strokeWidth));
+                            shineGraphics.draw(outline);
+                        }
                     }
                 } else {
                     String imagePath = MessageFormat.format(def.image, values);
