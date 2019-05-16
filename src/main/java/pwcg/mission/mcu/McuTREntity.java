@@ -20,6 +20,19 @@ public class McuTREntity extends BaseFlightMcu
         super();
     }
 
+    public McuTREntity clone(McuTREntity clone) {
+        super.clone(clone);
+
+        clone.enabled = enabled;
+        clone.misObjID = misObjID;
+        clone.onMessages = new ArrayList<>();
+        clone.onMessages.addAll(onMessages);
+        clone.eventList = new ArrayList<>();
+        clone.eventList.addAll(eventList);
+
+        return clone;
+    }
+
     public int getMisObjID()
     {
         return misObjID;

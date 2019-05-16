@@ -107,12 +107,6 @@ public class MissionPointEscortWaypointSet extends MissionPointSetMultipleWaypoi
 
     private void linkEscortSequenceToWaypoints() throws PWCGException
     {
-        if (escortSequenceConnect == EscortSequenceConnect.CONNECT_ESCORT_SEQUENCE)
-        {
-            McuWaypoint lastWaypointBefore = super.getLastWaypointBefore();
-            lastWaypointBefore.setTarget(escortSequence.getCoverEntry());
-        }
-        
         McuWaypoint firstWaypointAfter = super.getFirstWaypointAfter();
         escortSequence.setLinkToNextTarget(firstWaypointAfter.getIndex());
     }

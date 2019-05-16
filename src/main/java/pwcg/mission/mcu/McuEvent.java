@@ -5,6 +5,7 @@ public class McuEvent
     static public int ONPILOTWOUNDED = 1;
     static public int ONPLANECRASHED = 2;    
     static public int ONPLANECRITICALDAMAGED = 3;    
+    static public int ONPLANETOOKOFF = 6;
     static public int ONPLANEBINGOFUEL = 7;        
     static public int ONPLANEBINGOAMMO = 8;        
     static public int ONPLANEDAMAGED = 12;    

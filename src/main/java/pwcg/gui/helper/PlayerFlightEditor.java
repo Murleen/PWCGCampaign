@@ -140,6 +140,7 @@ public class PlayerFlightEditor
         PlaneMcu flightLeaderPlaneMcu = playerFlight.getFlightPlanes().getFlightLeader();        
         flightLeader.setIndex(flightLeaderPlaneMcu.getIndex());
         flightLeader.setLinkTrId(flightLeaderPlaneMcu.getLinkTrId());
+        flightLeaderPlaneMcu.getEntity().clone(flightLeader.getEntity());
         flightLeader.getEntity().setIndex(flightLeaderPlaneMcu.getEntity().getIndex());
 
         return flightLeader;
