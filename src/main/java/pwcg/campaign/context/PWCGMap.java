@@ -27,7 +27,8 @@ public abstract class PWCGMap
         KUBAN_MAP,
         BODENPLATTE_MAP,
         ARRAS_MAP,
-        PROKHOROVKA_MAP
+        PROKHOROVKA_MAP,
+        VELIKIE_LUKI_MAP
     }
 
     public static final String MOSCOW_MAP_NAME = "Moscow";
@@ -35,6 +36,7 @@ public abstract class PWCGMap
     public static final String KUBAN_MAP_NAME = "Kuban";
     public static final String BODENPLATTE_MAP_NAME = "Bodenplatte";
     public static final String PROKHOROVKA_MAP_NAME = "Prokhorovka";
+    public static final String VELIKIE_LUKI_MAP_NAME = "Velikie Luki";
 
     public static final String ARRAS_MAP_NAME = "Arras";
 
