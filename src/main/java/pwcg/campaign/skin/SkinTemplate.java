@@ -21,8 +21,6 @@ import java.text.MessageFormat;
 import java.util.Arrays;
 import java.util.Map;
 
-import javax.imageio.ImageIO;
-
 import pwcg.campaign.Campaign;
 import pwcg.campaign.context.PWCGContext;
 import pwcg.campaign.squadron.Squadron;
@@ -113,7 +111,8 @@ public class SkinTemplate {
             String imagesDir = PWCGContext.getInstance().getDirectoryManager().getPwcgImagesDir();
             String fontsDir = PWCGContext.getInstance().getDirectoryManager().getPwcgFontsDir();
 
-            BufferedImage baseImage = ImageIO.read(new File(skinTemplatesDir + MessageFormat.format(baseImagePath, values)));
+            BufferedImage baseImage = imageCache.getBufferedImage(skinTemplatesDir + MessageFormat.format(baseImagePath, values));
+            baseImage = new BufferedImage(baseImage.getColorModel(), baseImage.copyData(baseImage.getRaster().createCompatibleWritableRaster()), false, null);
 
             // Alpha channel of the base image contains the shininess map, which should
             // be unchanged. Create a new image backed by the same data arrays, but only
@@ -179,7 +178,7 @@ public class SkinTemplate {
                 graphics.setTransform(origTransform);
             }
 
-            BufferedImage weatherImage = ImageIO.read(new File(skinTemplatesDir + MessageFormat.format(weatherImagePath, values)));
+            BufferedImage weatherImage = imageCache.getBufferedImage(skinTemplatesDir + MessageFormat.format(weatherImagePath, values));
             graphics.drawImage(weatherImage, 0, 0, null);
             weatherImage = null;
 
