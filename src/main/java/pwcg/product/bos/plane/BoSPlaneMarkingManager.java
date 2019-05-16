@@ -11,6 +11,7 @@ import pwcg.campaign.plane.IPlaneMarkingManager;
 import pwcg.campaign.plane.Role;
 import pwcg.campaign.squadron.Squadron;
 import pwcg.core.exception.PWCGException;
+import pwcg.core.utils.DateUtils;
 import pwcg.core.utils.RandomNumberGenerator;
 import pwcg.product.bos.country.BoSServiceManager;
 
@@ -29,7 +30,8 @@ public class BoSPlaneMarkingManager implements IPlaneMarkingManager {
 
         if (squadron.getService() == BoSServiceManager.LUFTWAFFE)
         {
-            if (squadron.determineSquadronPrimaryRole(campaign.getDate()) == Role.ROLE_FIGHTER)
+            if (squadron.determineSquadronPrimaryRole(campaign.getDate()) == Role.ROLE_FIGHTER ||
+                (squadron.determineSquadronPrimaryRole(campaign.getDate()) == Role.ROLE_ATTACK && campaign.getDate().after(DateUtils.getDateYYYYMMDD("19440801"))))
             {
                 // Allocate numbers 1-N
                 int code = 1;
@@ -67,6 +69,19 @@ public class BoSPlaneMarkingManager implements IPlaneMarkingManager {
 
             equippedPlane.setAircraftIdCode(Integer.toString(code));
         }
+        else if (squadron.getService() == BoSServiceManager.USAAF ||
+                 squadron.getService() == BoSServiceManager.RAF)
+        {
+            // Allocate letters from A
+            // Do this randomly rather than in sequence?
+            char code = 'A';
+            while (allocatedCodes.contains(Character.toString(code)))
+                code++;
+            if (code > 'Z')
+                throw new PWCGException("Unable to allocate plane ID code for squadron " + squadron.getSquadronId());
+
+            equippedPlane.setAircraftIdCode(Character.toString(code));
+        }
     }
 
     @Override
@@ -97,7 +112,9 @@ public class BoSPlaneMarkingManager implements IPlaneMarkingManager {
         {
             return equippedPlane.getAircraftIdCode();
         }
-        else if (squadron.getService() == BoSServiceManager.REGIA_AERONAUTICA)
+        else if (squadron.getService() == BoSServiceManager.REGIA_AERONAUTICA ||
+                 squadron.getService() == BoSServiceManager.USAAF ||
+                 squadron.getService() == BoSServiceManager.RAF)
         {
             return squadron.determineUnitIdCode(campaign.getDate()) +
                     "-" +
