@@ -36,9 +36,18 @@ public class ProkhorovkaMap extends PWCGMap
     @Override
     protected void configureTransitionDates() throws PWCGException
     {
-        this.frontDatesForMap.addMapDateRange(DateUtils.getDateYYYYMMDD("19430701"), DateUtils.getDateYYYYMMDD("19430831"));
+        this.frontDatesForMap.addMapDateRange(DateUtils.getDateYYYYMMDD("19430705"), DateUtils.getDateYYYYMMDD("19430807"));
 
-        this.frontDatesForMap.addFrontDate("19430715");
+        this.frontDatesForMap.addFrontDate("19430705");
+        this.frontDatesForMap.addFrontDate("19430712");
+        this.frontDatesForMap.addFrontDate("19430713");
+        this.frontDatesForMap.addFrontDate("19430714");
+        this.frontDatesForMap.addFrontDate("19430716");
+        this.frontDatesForMap.addFrontDate("19430718");
+        this.frontDatesForMap.addFrontDate("19430723");
+        this.frontDatesForMap.addFrontDate("19430803");
+        this.frontDatesForMap.addFrontDate("19430805");
+        this.frontDatesForMap.addFrontDate("19430807");
 }
 
 }
