@@ -2,6 +2,7 @@ package pwcg.gui.rofmap.editmap;
 
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import pwcg.campaign.api.Side;
@@ -10,15 +11,18 @@ import pwcg.campaign.context.PWCGContext;
 import pwcg.campaign.io.json.LocationIOJson;
 import pwcg.core.exception.PWCGException;
 import pwcg.core.location.LocationSet;
+import pwcg.core.utils.DateUtils;
 import pwcg.core.utils.Logger;
 import pwcg.core.utils.MathUtils;
 
 public class FrontLineWriter
 {
+    private Date frontDate;
     private List<FrontLinePoint> userFrontLines = new ArrayList<>();
         
-    public FrontLineWriter(List<FrontLinePoint> userFrontLines)
+    public FrontLineWriter(Date frontDate, List<FrontLinePoint> userFrontLines)
     {
+        this.frontDate = frontDate;
         this.userFrontLines = userFrontLines;
     }
 
@@ -92,7 +96,7 @@ public class FrontLineWriter
 
     private void writeFront() throws PWCGException, IOException
     {
-        String outputPath = PWCGContext.getInstance().getDirectoryManager().getPwcgInputDir() + PWCGContext.getInstance().getCurrentMap().getMapName() + "\\";      
+        String outputPath = PWCGContext.getInstance().getDirectoryManager().getPwcgInputDir() + PWCGContext.getInstance().getCurrentMap().getMapName() + "\\" + DateUtils.getDateStringYYYYMMDD(frontDate) + "\\";
         
         LocationSet locationSet = new LocationSet("FrontLines");
         frontLinePointToLocationSet(locationSet, userFrontLines);

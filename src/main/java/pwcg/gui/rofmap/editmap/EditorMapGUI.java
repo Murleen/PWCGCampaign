@@ -339,7 +339,7 @@ public class EditorMapGUI extends MapGUI implements ActionListener
 
     private void writeData() throws PWCGException 
     {
-        FrontLineWriter frontLineWriter = new FrontLineWriter(frontLineCreator.getUserCreatedFrontLines());
+        FrontLineWriter frontLineWriter = new FrontLineWriter(mapDate, frontLineCreator.getUserCreatedFrontLines());
         frontLineWriter.finished();
     }
 
