@@ -22,16 +22,11 @@ import java.text.MessageFormat;
 import java.util.Arrays;
 import java.util.Map;
 
-import pwcg.campaign.Campaign;
 import pwcg.campaign.context.PWCGContext;
-import pwcg.campaign.factory.RankFactory;
-import pwcg.campaign.squadron.Squadron;
-import pwcg.core.exception.PWCGException;
+import pwcg.core.exception.PWCGIOException;
 import pwcg.core.utils.DDSWriter;
 import pwcg.gui.dialogs.FontCache;
 import pwcg.gui.dialogs.ImageCache;
-import pwcg.mission.flight.plane.PlaneMcu;
-import pwcg.mission.options.MapSeasonalParameters.Season;
 
 public class SkinTemplate {
     enum HorizAlign {
@@ -79,70 +74,44 @@ public class SkinTemplate {
     public class SkinTemplateInstance
     {
         private Object[] values;
+        private BufferedImage skinImage;
 
-        public SkinTemplateInstance(Campaign campaign, PlaneMcu plane, Map<String, Object> overrides) throws PWCGException
+        public SkinTemplateInstance(Map<String, Object> overrides)
         {
-            Squadron squadron = PWCGContext.getInstance().getSquadronManager().getSquadron(plane.getSquadronId());
             values = new Object[parameters.length];
 
             for (int i = 0; i < parameters.length; i++)
             {
                 String param = parameters[i];
-                Object value = null;
 
                 if (overrides != null && overrides.containsKey(param))
-                    value = overrides.get(param);
-                else if (param.equals("UNIT_ID_CODE"))
-                    value = squadron.determineUnitIdCode(campaign.getDate());
-                else if (param.equals("SUB_UNIT_ID_CODE"))
-                    value = squadron.determineSubUnitIdCode(campaign.getDate());
-                else if (param.equals("AIRCRAFT_ID_CODE"))
-                    value = plane.getAircraftIdCode();
-                else if (param.equals("WINTER")) {
-                    Season season = PWCGContext.getInstance().getCurrentMap().getMapWeather().getSeason(campaign.getDate());
-                    value = (season == Season.WINTER) ? 1 : 0;
-                }
-                else if (param.equals("PILOT_RANK"))
-                    value = RankFactory.createRankHelper().getRankPosByService(plane.getPilot().getRank(), plane.getPilot().determineService(campaign.getDate()));
-                else if (param.equals("PILOT_NAME_RANK"))
-                    value = plane.getPilot().getNameAndRank();
-                else if (param.equals("PILOT_NAME_RANK_UC"))
-                    value = plane.getPilot().getNameAndRank().toUpperCase();
-
-                values[i] = value;
+                    values[i] = overrides.get(param);
             }
 
         }
 
-        public void generate() throws Exception {
+        public void generate() throws PWCGIOException {
+            render();
+            write();
+        }
+
+        public void write() throws PWCGIOException {
+            String fileName = getFilename();
+            DDSWriter.writeImage(skinImage, new File(Skin.PRODUCT_SKIN_DIR + "\\" + planeType + "\\" + fileName));
+        }
+
+        public void render() throws PWCGIOException {
             ImageCache imageCache = ImageCache.getInstance();
             FontCache fontCache = FontCache.getInstance();
             String skinTemplatesDir = PWCGContext.getInstance().getDirectoryManager().getPwcgSkinTemplatesDir();
             String imagesDir = PWCGContext.getInstance().getDirectoryManager().getPwcgImagesDir();
             String fontsDir = PWCGContext.getInstance().getDirectoryManager().getPwcgFontsDir();
 
-            BufferedImage baseImage = imageCache.getBufferedImage(skinTemplatesDir + MessageFormat.format(baseImagePath, values));
-            baseImage = new BufferedImage(baseImage.getColorModel(), baseImage.copyData(baseImage.getRaster().createCompatibleWritableRaster()), false, null);
+            skinImage = imageCache.getBufferedImage(skinTemplatesDir + MessageFormat.format(baseImagePath, values));
+            skinImage = new BufferedImage(skinImage.getColorModel(), skinImage.copyData(skinImage.getRaster().createCompatibleWritableRaster()), false, null);
 
-            // Alpha channel of the base image contains the shininess map, which should
-            // be unchanged. Create a new image backed by the same data arrays, but only
-            // using the color components.
-            int[] bandList = {0, 1, 2};
-            WritableRaster colorOnlyRaster = baseImage.getRaster().createWritableChild(
-                                                 0, 0,
-                                                 baseImage.getWidth(), baseImage.getHeight(),
-                                                 0, 0,
-                                                 bandList);
-            WritableRaster alphaRaster = baseImage.getAlphaRaster();
-
-            ColorModel colorModel = new ComponentColorModel(baseImage.getColorModel().getColorSpace(), false, false, Transparency.OPAQUE, DataBuffer.TYPE_BYTE);
-            BufferedImage skin = new BufferedImage(colorModel, colorOnlyRaster, false, null);
-            // Create our own 1:1 lookup table for the shininess map, as otherwise Java does weird gamma correction
-            byte[] lut = new byte[256];
-            for (int i = 0; i < 256; i++)
-                lut[i] = (byte) i;
-            ColorModel shineColorModel = new IndexColorModel(8, 256, lut, lut, lut);
-            BufferedImage shineMap = new BufferedImage(shineColorModel, alphaRaster, false, null);
+            BufferedImage skin = getColorImage();
+            BufferedImage shineMap = getShineImage();
 
             Graphics2D graphics = skin.createGraphics();
             graphics.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
@@ -219,12 +188,38 @@ public class SkinTemplate {
 
             BufferedImage weatherImage = imageCache.getBufferedImage(skinTemplatesDir + MessageFormat.format(weatherImagePath, values));
             graphics.drawImage(weatherImage, 0, 0, null);
-            weatherImage = null;
 
             graphics.dispose();
+        }
 
-            String fileName = getFilename();
-            DDSWriter.writeImage(baseImage, new File(Skin.PRODUCT_SKIN_DIR + "\\" + planeType + "\\" + fileName));
+        public BufferedImage getShineImage() {
+            WritableRaster alphaRaster = skinImage.getAlphaRaster();
+            // Create our own 1:1 lookup table for the shininess map, as otherwise Java does weird gamma correction
+            byte[] lut = new byte[256];
+            for (int i = 0; i < 256; i++)
+                lut[i] = (byte) i;
+            ColorModel shineColorModel = new IndexColorModel(8, 256, lut, lut, lut);
+            BufferedImage shineMap = new BufferedImage(shineColorModel, alphaRaster, false, null);
+            return shineMap;
+        }
+
+        public BufferedImage getColorImage() {
+            if (skinImage != null) {
+                // Alpha channel of the base image contains the shininess map, which should
+                // be unchanged. Create a new image backed by the same data arrays, but only
+                // using the color components.
+                int[] bandList = {0, 1, 2};
+                WritableRaster colorOnlyRaster = skinImage.getRaster().createWritableChild(
+                                                     0, 0,
+                                                     skinImage.getWidth(), skinImage.getHeight(),
+                                                     0, 0,
+                                                     bandList);
+
+                ColorModel colorModel = new ComponentColorModel(skinImage.getColorModel().getColorSpace(), false, false, Transparency.OPAQUE, DataBuffer.TYPE_BYTE);
+                BufferedImage skin = new BufferedImage(colorModel, colorOnlyRaster, false, null);
+                return skin;
+            } else
+                return null;
         }
 
         private void setTransform(Graphics2D graphics, ElementDef def, Rectangle2D bounds, double scalingFactor) {
@@ -267,9 +262,13 @@ public class SkinTemplate {
         }
     }
 
-    public SkinTemplateInstance instantiate(Campaign campaign, PlaneMcu plane, Map<String, Object> overrides) throws PWCGException
+    public SkinTemplateInstance instantiate(Map<String, Object> overrides)
     {
-        return new SkinTemplateInstance(campaign, plane, overrides);
+        return new SkinTemplateInstance(overrides);
+    }
+
+    public String[] getParameters() {
+        return parameters.clone();
     }
 
 }
