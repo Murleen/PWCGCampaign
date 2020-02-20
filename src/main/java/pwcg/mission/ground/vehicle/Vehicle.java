@@ -37,6 +37,7 @@ public class Vehicle implements Cloneable, IVehicle
     protected int damageThreshold = 1;
     protected int deleteAfterDeath = 1;
     protected ICountry country = CountryFactory.makeCountryByCountry(Country.NEUTRAL);
+    protected String associatedBlock;
 
     protected McuTREntity entity = new McuTREntity();
 
@@ -257,5 +258,10 @@ public class Vehicle implements Cloneable, IVehicle
     public int getIndex()
     {
         return index;
+    }
+
+    public String getAssociatedBlock()
+    {
+        return associatedBlock;
     }
 }

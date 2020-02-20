@@ -24,4 +24,5 @@ public interface IVehicle extends IPWCGObject
     public ICountry getCountry();
     public Coordinate getPosition();
     public int getIndex();
+    public String getAssociatedBlock();
 }
