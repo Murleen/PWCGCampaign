@@ -4,6 +4,7 @@ import pwcg.campaign.ArmedService;
 import pwcg.campaign.Campaign;
 import pwcg.campaign.api.IRankHelper;
 import pwcg.campaign.factory.RankFactory;
+import pwcg.campaign.personnel.SquadronPersonnel;
 import pwcg.campaign.squadmember.SquadronMember;
 import pwcg.core.exception.PWCGException;
 
@@ -46,7 +47,17 @@ public class PromotionEventHandlerRecon
         }
         else if (rankPosBeforePromotion == 1)
         {
-            if (pilot.isPlayer())
+            boolean squadronHasCommander = false;
+            SquadronPersonnel playerPersonnel = campaign.getPersonnelManager().getSquadronPersonnel(pilot.getSquadronId());
+            for (SquadronMember squadronMember : playerPersonnel.getSquadronMembers().getSquadronMemberList())
+            {
+                if (squadronMember.determineIsSquadronMemberCommander())
+                {
+                    squadronHasCommander = true;
+                }
+            }
+
+            if (pilot.isPlayer() || !squadronHasCommander)
             {
                 if (numMissions >= PilotRankCommandMinMissions)
                 {
