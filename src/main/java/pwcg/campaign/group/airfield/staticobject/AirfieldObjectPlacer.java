@@ -137,7 +137,7 @@ public class AirfieldObjectPlacer
         if (!airfield.createCountry(campaign.getDate()).isNeutral())
         {
             AAAUnitBuilder groundUnitFactory = new AAAUnitBuilder(campaign, airfield.getCountry(campaign.getDate()), hotSpot.getPosition());
-            IGroundUnitCollection aaaMg = groundUnitFactory.createAAAMGBattery(GroundUnitSize.GROUND_UNIT_SIZE_TINY);
+            IGroundUnitCollection aaaMg = groundUnitFactory.createAAAArtilleryBattery(GroundUnitSize.GROUND_UNIT_SIZE_TINY);
             if (aaaMg != null)
             {
             	airfieldObjects.addAaaForAirfield(aaaMg);
