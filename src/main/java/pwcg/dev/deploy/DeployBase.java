@@ -16,9 +16,9 @@ public abstract class DeployBase
 	protected HashMap<String, Object> directoriesToCopy = new HashMap<String, Object>();
 	protected HashMap<String, Object> unwantedFiles = new HashMap<String, Object>();
 
-	protected String sourceRootDir = "D:\\PWCG\\workspacePwcg\\PWCGCampaign";
-	protected String deployDir = "D:\\PWCG\\Deploy";
-	protected String targetDir = "D:\\PWCG\\Deploy\\PWCGCampaign";
+	protected String sourceRootDir = System.getProperty("user.dir");
+	protected String deployDir = sourceRootDir + "\\Deploy";
+	protected String targetDir = deployDir + "\\PWCGCampaign";
 	protected String targetFinalDir = "";
 
     static boolean reallyDoDeploy = true;
@@ -168,6 +168,7 @@ public abstract class DeployBase
         unwantedFileTypes.put(".ant", null);
 		unwantedFileTypes.put(".classpath", null);
 		unwantedFileTypes.put(".project", null);
+        unwantedFileTypes.put(".py", null);
 
 		return unwantedFileTypes;
 	}
