@@ -67,6 +67,38 @@
       }
     },
     {
+      "skinName": "LW_FIGHTER_LATE_I_JG27",
+      "archTypes": ["bf109"],
+      "startDate": "19440901",
+      "endDate": "19441231",
+      "squadId": 20111052,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_FIGHTER_LATE",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 2,
+	"ID_BAND_FORE": "3f853f",
+	"ID_BAND_AFT": "3f853f"
+      }
+    },
+    {
+      "skinName": "LW_FIGHTER_LATER_I_JG27",
+      "archTypes": ["bf109"],
+      "startDate": "19450101",
+      "endDate": "19450503",
+      "squadId": 20111052,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_FIGHTER_LATER",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 2,
+	"ID_BAND_FORE": "3f853f",
+	"ID_BAND_AFT": "3f853f"
+      }
+    },
+    {
       "skinName": "I_JG52",
       "planeType": "bf109f4",
       "startDate": "19400801",

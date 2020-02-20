@@ -33,7 +33,10 @@
       "country": "USA",
       "category": "Squadron",
       "definedInGame": false,
-      "template": "USAAF_LATE_BARE"
+      "template": "USAAF_LATE_BARE",
+      "overrides": {
+        "SQUADRON_NUM": 365
+      }
     }
   ],
   "squadHistory": {

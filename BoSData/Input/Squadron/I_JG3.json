@@ -46,9 +46,9 @@
   "skins": [
     {
       "skinName": "LW_GENERIC_FIGHTER_I_JG3",
-      "archTypes": ["bf109", "fw190"],
+      "archTypes": ["bf109"],
       "startDate": "19411001",
-      "endDate": "19450503",
+      "endDate": "19431231",
       "squadId": 20111003,
       "country": "Germany",
       "category": "Squadron",
@@ -56,6 +56,22 @@
       "template": "LW_GENERIC_FIGHTER",
       "overrides": {
         "STAFFEL_COLOR_INDEX": 3
+      }
+    },
+    {
+      "skinName": "LW_FIGHTER_MID_I_JG3",
+      "archTypes": ["bf109"],
+      "startDate": "19440101",
+      "endDate": "19440831",
+      "squadId": 20111003,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_FIGHTER_MID",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 3,
+	"ID_BAND_FORE": "ffffff",
+        "ID_BAND_AFT": "ffffff"
       }
     },
     {

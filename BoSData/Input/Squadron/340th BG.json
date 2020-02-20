@@ -24,6 +24,17 @@
   },
   "skins": [
     {
+      "skinName": "USAAF_LATE_OLIVE_340",
+      "archTypes": ["a20"],
+      "startDate": "19440801",
+      "endDate": "19450601",
+      "squadId": 102340486,
+      "country": "USA",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "USAAF_LATE_OLIVE"
+    },
+    {
       "skinName": "340th Bomber Group",
       "planeType": "a20b",
       "startDate": "19420801",

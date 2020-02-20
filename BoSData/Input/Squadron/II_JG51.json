@@ -52,7 +52,7 @@
       "skinName": "LW_GENERIC_FIGHTER_II_JG51",
       "archTypes": ["bf109", "fw190"],
       "startDate": "19411001",
-      "endDate": "19450503",
+      "endDate": "19440831",
       "squadId": 20112051,
       "country": "Germany",
       "category": "Squadron",
@@ -61,6 +61,38 @@
       "overrides": {
         "STAFFEL_COLOR_INDEX": 3,
         "INSIGNIA_NOSE": "Insignia\\JG51.png"
+      }
+    },
+    {
+      "skinName": "LW_FIGHTER_LATE_I_JG77",
+      "archTypes": ["bf109", "fw190"],
+      "startDate": "19440901",
+      "endDate": "19450503",
+      "squadId": 20112051,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_FIGHTER_LATE",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 3,
+	"ID_BAND_FORE": "ffffff",
+	"ID_BAND_AFT": "3f853f"
+      }
+    },
+    {
+      "skinName": "LW_FIGHTER_LATER_I_JG77",
+      "archTypes": ["bf109", "fw190"],
+      "startDate": "19440901",
+      "endDate": "19450503",
+      "squadId": 20112051,
+      "country": "Germany",
+      "category": "Squadron",
+      "definedInGame": false,
+      "template": "LW_FIGHTER_LATER",
+      "overrides": {
+        "STAFFEL_COLOR_INDEX": 3,
+	"ID_BAND_FORE": "ffffff",
+	"ID_BAND_AFT": "3f853f"
       }
     },
     {

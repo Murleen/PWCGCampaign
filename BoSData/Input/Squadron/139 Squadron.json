@@ -26,7 +26,7 @@
   "skins": [
     {
       "skinName": "RAF_LATE_OLIVE_139",
-      "archTypes": ["a20"],
+      "archTypes": ["b25"],
       "startDate": "19440801",
       "endDate": "19450601",
       "squadId": 103002139,
