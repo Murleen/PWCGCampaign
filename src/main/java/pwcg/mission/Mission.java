@@ -70,7 +70,7 @@ public class Mission
         ambientBalloonBuilder = new AmbientBalloonBuilder(this);
         ambientGroundUnitBuilder = new AmbientGroundUnitBuilder(campaign, this);
         missionFlightBuilder = new MissionFlightBuilder(campaign, this);
-        missionFrontLines = new MissionFrontLineIconBuilder(campaign, this);
+        missionFrontLines = new MissionFrontLineIconBuilder(campaign);
         missionSquadronIconBuilder = new MissionSquadronIconBuilder(campaign);
     }
 
