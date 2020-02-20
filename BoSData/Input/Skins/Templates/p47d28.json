@@ -7,7 +7,8 @@
       "parameters": [
         "UNIT_ID_CODE",
         "AIRCRAFT_ID_CODE",
-        "PILOT_NAME_RANK_UC"
+        "PILOT_NAME_RANK_UC",
+        "SQUADRON_NUM"
       ],
       "defs": [
         {
@@ -71,7 +72,7 @@
           "fillShine": "3f"
         }
       ],
-      "baseImagePath": "p47d28_usaaf_late_bare_base.png",
+      "baseImagePath": "p47d28_usaaf_late_bare{3,choice,0#|0<_{3}}_base.png",
       "weatherImagePath": "p47d28_weather.png"
     }
   }

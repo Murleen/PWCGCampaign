@@ -42,7 +42,8 @@
       "parameters": [
         "UNIT_ID_CODE",
         "AIRCRAFT_ID_CODE",
-        "PILOT_RANK"
+        "PILOT_RANK",
+        "STRIPES"
       ],
       "defs": [
         {
@@ -110,7 +111,7 @@
           "orientation": 180
         }
       ],
-      "baseImagePath": "a20b_raf_late_olive_base.png",
+      "baseImagePath": "a20b_raf_late_olive_{3,choice,0#|1#stripes_under_|2#stripes_}base.png",
       "weatherImagePath": "a20b_weather.png"
     },
     "usaaf_late_olive": {
@@ -120,7 +121,7 @@
       "parameters": [
         "UNIT_ID_CODE",
         "AIRCRAFT_ID_CODE",
-        "PILOT_NAME_RANK_UC"
+        "STRIPES"
       ],
       "defs": [
         {
@@ -166,20 +167,9 @@
           "y": 179,
           "orientation": 180,
           "fillColor": "c6c6c6"
-        },
-        {
-          "text": "PILOT: {2}",
-          "horizAlign": "LEFT",
-          "vertAlign": "TOP",
-          "font": "Airborne.otf",
-          "size": 13,
-          "x": 1382,
-          "y": 3533,
-          "orientation": 0,
-          "fillColor": "c6c6c6"
         }
       ],
-      "baseImagePath": "a20b_usaaf_late_olive_base.png",
+      "baseImagePath": "a20b_usaaf_late_olive_{2,choice,0#|1#stripes_under_|2#stripes_}base.png",
       "weatherImagePath": "a20b_weather.png"
     }
   }

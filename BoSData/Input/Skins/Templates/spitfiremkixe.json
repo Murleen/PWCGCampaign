@@ -41,7 +41,8 @@
       "parameters": [
         "UNIT_ID_CODE",
         "AIRCRAFT_ID_CODE",
-        "PILOT_RANK"
+        "PILOT_RANK",
+        "STRIPES"
       ],
       "defs": [
         {
@@ -109,7 +110,7 @@
           "orientation": 180
         }
       ],
-      "baseImagePath": "spitfiremkixe_raf_late_base.png",
+      "baseImagePath": "spitfiremkixe_raf_late_{3,choice,0#|1#stripes_under_|2#stripes_}base.png",
       "weatherImagePath": "spitfiremkixe_weather.png"
     }
   }

@@ -11,26 +11,24 @@
       "defs": [
         {
           "text": "{0}",
-          "horizAlign": "LEFT",
+          "horizAlign": "RIGHT",
           "vertAlign": "BOTTOM",
           "font": "VVSNumbers1.otf",
           "size": 320,
           "x": 2484,
           "y": 942,
           "orientation": 90,
-          "horizFlip": true,
           "fillColor": "{1,choice,0#e7e7e7|1#961818}"
         },
         {
           "text": "{0}",
-          "horizAlign": "RIGHT",
+          "horizAlign": "LEFT",
           "vertAlign": "BOTTOM",
           "font": "VVSNumbers1.otf",
           "size": 320,
           "x": 2277,
           "y": 1088,
           "orientation": 270,
-          "horizFlip": true,
           "fillColor": "{1,choice,0#e7e7e7|1#961818}"
         }
       ],
