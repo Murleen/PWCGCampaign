@@ -135,6 +135,10 @@ public class MathUtils
 		{
 			polarZ = frontParameters.getzMax() - FrontParameters.MIN_DISTANCE_FROM_BORDER;
 		}
+        else if (polarZ < frontParameters.getzMin())
+        {
+            polarZ = frontParameters.getzMin() + FrontParameters.MIN_DISTANCE_FROM_BORDER;
+        }
 		
 		// Get the angle
 		Coordinate polarCoord = new Coordinate();
