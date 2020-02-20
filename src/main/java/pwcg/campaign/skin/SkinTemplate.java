@@ -12,10 +12,12 @@ import java.awt.font.GlyphVector;
 import java.awt.geom.AffineTransform;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
+import java.awt.image.BufferedImageOp;
 import java.awt.image.ColorModel;
 import java.awt.image.ComponentColorModel;
 import java.awt.image.DataBuffer;
 import java.awt.image.IndexColorModel;
+import java.awt.image.RescaleOp;
 import java.awt.image.WritableRaster;
 import java.io.File;
 import java.text.MessageFormat;
@@ -176,11 +178,24 @@ public class SkinTemplate {
                     if (image == null)
                         continue;
                     bounds = new Rectangle(0, -image.getHeight(), image.getWidth(), image.getHeight());
-                    double scalingFactor = Math.min((double) def.width / image.getWidth(), (double) def.height / image.getHeight());
+                    double width  = (def.width != 0) ? def.width : image.getWidth();
+                    double height = (def.height != 0) ? def.height : image.getHeight();
+                    double scalingFactor = Math.min((double) width / image.getWidth(), (double) height / image.getHeight());
+
+                    BufferedImageOp op = null;
+
+                    if (def.fillColor != null) {
+                        String colorString = MessageFormat.format(def.fillColor, values);
+                        if (colorString == null || colorString.equals("") || colorString.equals("null"))
+                            continue;
+                        Color fillColor = Color.decode("0x" + colorString);
+
+                        op = new RescaleOp(new float[] {fillColor.getRed() / 255f, fillColor.getGreen() / 255f, fillColor.getBlue() / 255f, 1f}, new float[] {0f, 0f, 0f, 0f}, null);
+                    }
 
                     setTransform(graphics, def, bounds, scalingFactor);
 
-                    graphics.drawImage(image, 0, -image.getHeight(), null);
+                    graphics.drawImage(image, op, 0, -image.getHeight());
                 }
 
                 graphics.setTransform(origTransform);
