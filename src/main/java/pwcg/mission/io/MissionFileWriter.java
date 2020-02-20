@@ -36,7 +36,9 @@ import pwcg.mission.ground.vehicle.IVehicle;
 import pwcg.mission.ground.vehicle.VehicleClass;
 import pwcg.mission.ground.vehicle.VehicleFactory;
 import pwcg.mission.ground.vehicle.VehicleSetBuilderComprehensive;
+import pwcg.mission.mcu.CoalitionFactory;
 import pwcg.mission.mcu.effect.FirePotSeries;
+import pwcg.mission.mcu.group.SirenGroup;
 import pwcg.mission.mcu.group.SmokeGroup;
 import pwcg.mission.object.WindSock;
 
@@ -231,6 +233,7 @@ public class MissionFileWriter implements IMissionFile
         writeFieldsInMission(writer);
         writeRadioBeacon(writer);
         writeRunwayT(writer);
+        writeSiren(writer);
         writeFakeAirfieldForAiReturnToBase(writer);
         writeSmoke(writer);
         writeFirePots(writer);
@@ -317,6 +320,18 @@ public class MissionFileWriter implements IMissionFile
                     landCanvas2.write(writer);
                 }
             }
+        }
+    }
+
+    private void writeSiren(BufferedWriter writer) throws PWCGException
+    {
+        for (IFlight playerFlight :  mission.getMissionFlightBuilder().getPlayerFlights())
+        {
+            SirenGroup sirenGroup = new SirenGroup();
+            Coordinate sirenPosition = playerFlight.getFlightHomePosition();
+
+            sirenGroup.buildSirenGroup(mission, sirenPosition, CoalitionFactory.getEnemyCoalition(playerFlight.getFlightInformation().getCountry()));
+            sirenGroup.write(writer);
         }
     }
 
