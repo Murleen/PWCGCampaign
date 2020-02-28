@@ -4,6 +4,7 @@
   "name": "352nd Fighter Group",
   "fileName": "352nd FG.json",
   "skill": 80,
+  "unitIdCode": "PZ",
   "planeAssignments": [
     {
       "archType": "p51",
@@ -34,7 +35,8 @@
       "definedInGame": false,
       "template": "USAAF_LATE_BARE",
       "overrides": {
-        "SQUADRON_NUM": 0
+        "SQUADRON_NUM": 486,
+	"ID_ON_TAIL": 1
       }
     }
   ],

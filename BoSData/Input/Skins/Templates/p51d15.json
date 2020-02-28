@@ -8,7 +8,8 @@
         "UNIT_ID_CODE",
         "AIRCRAFT_ID_CODE",
         "PILOT_NAME_RANK",
-        "SQUADRON_NUM"
+        "SQUADRON_NUM",
+        "ID_ON_TAIL"
       ],
       "defs": [
         {
@@ -24,7 +25,7 @@
           "fillShine": "3f"
         },
         {
-          "text": "{1}",
+          "text": "{4,choice,0#{1}|1#}",
           "horizAlign": "LEFT",
           "vertAlign": "CENTER",
           "font": "Airborne.otf",
@@ -48,13 +49,37 @@
           "fillShine": "3f"
         },
         {
-          "text": "{1}",
+          "text": "{4,choice,0#{1}|1#}",
           "horizAlign": "RIGHT",
           "vertAlign": "CENTER",
           "font": "Airborne.otf",
           "size": 260,
           "x": 2474,
           "y": 472,
+          "orientation": 180,
+          "fillColor": "191919",
+          "fillShine": "3f"
+        },
+        {
+          "text": "{4,choice,0#|1#{1}}",
+          "horizAlign": "RIGHT",
+          "vertAlign": "TOP",
+          "font": "Airborne.otf",
+          "size": 240,
+          "x": 3730,
+          "y": 850,
+          "orientation": 0,
+          "fillColor": "191919",
+          "fillShine": "3f"
+        },
+        {
+          "text": "{4,choice,0#|1#{1}}",
+          "horizAlign": "LEFT",
+          "vertAlign": "TOP",
+          "font": "Airborne.otf",
+          "size": 240,
+          "x": 3530,
+          "y": 628,
           "orientation": 180,
           "fillColor": "191919",
           "fillShine": "3f"

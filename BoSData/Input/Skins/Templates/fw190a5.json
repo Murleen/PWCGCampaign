@@ -43,7 +43,7 @@
         },
         {
           "text": "{1}",
-          "horizAlign": "RIGHT",
+          "horizAlign": "LEFT",
           "vertAlign": "CENTER",
           "font": "Blockschrift.otf",
           "size": 350,
@@ -56,7 +56,7 @@
         },
         {
           "text": "{1}",
-          "horizAlign": "LEFT",
+          "horizAlign": "RIGHT",
           "vertAlign": "CENTER",
           "font": "Blockschrift.otf",
           "size": 350,
