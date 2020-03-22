@@ -93,6 +93,7 @@ public class WithdrawnEquipmentReplacer
         IPlaneMarkingManager planeMarkingManager = PWCGContext.getInstance().getPlaneMarkingManager();
         PlaneEquipmentFactory equipmentFactory = new PlaneEquipmentFactory(campaign);
         EquippedPlane equippedPlane = equipmentFactory.makePlaneForSquadron(planeTypeName, squadron.getSquadronId());
+		planeMarkingManager.generatePlaneSerial(campaign.getDate(), equippedPlane, squadron.getService());
 		planeMarkingManager.allocatePlaneIdCode(campaign, equipment, equippedPlane);
         equipment.addEquippedPlane(equippedPlane);
     }

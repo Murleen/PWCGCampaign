@@ -136,7 +136,7 @@ public class CampaignEquipmentDepotPanel extends ImagePanel
         depoStatusBuffer.append("\n  " + Role.roleToSDesc(role) + "\n");        
         for (EquippedPlane plane : aircraftForRole)
         {
-            depoStatusBuffer.append("    " + plane.getDisplayName() + " (" + plane.getSerialNumber() + ")");
+            depoStatusBuffer.append("    " + plane.getDisplayName() + " (" + plane.getDisplaySerial() + ")");
             depoStatusBuffer.append(".\n");          
         }
         
